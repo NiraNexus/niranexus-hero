@@ -1,0 +1,205 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
+
+interface SystemStatus {
+  debates: number;
+  models: number;
+  status: string;
+}
+
+export default function ModelCouncilPage() {
+  const [status, setStatus] = useState<SystemStatus | null>(null);
+  const [statusError, setStatusError] = useState(false);
+
+  useEffect(() => {
+    fetch('/api/status')
+      .then(r => { if (!r.ok) throw new Error(); return r.json(); })
+      .then(setStatus)
+      .catch(() => setStatusError(true));
+  }, []);
+
+  return (
+    <main style={{ backgroundColor: '#05070f', color: '#cbd5e1', minHeight: '100vh', fontFamily: 'var(--font-body)' }} aria-label="Model Council technical deep-dive">
+      {/* Breadcrumb */}
+      <div style={{ padding: '1.5rem 2rem 0', maxWidth: 800, margin: '0 auto' }}>
+        <Link href="/" style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#00ebd4', textDecoration: 'none' }}>
+          &larr; NiraNexus Home
+        </Link>
+      </div>
+
+      {/* ═══ HERO ═══ */}
+      <section style={{ padding: '3rem 2rem 1rem', maxWidth: 800, margin: '0 auto', textAlign: 'center' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
+          <a href="/" title="NiraNexus home" style={{ display: 'flex' }}>
+            <img src="/logo.svg" alt="NiraNexus" style={{ width: 32, height: 32 }} />
+          </a>
+          <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(1.5rem, 3.5vw, 2rem)', color: '#ffffff', margin: 0 }}>
+            <span style={{ color: '#00ebd4', textShadow: '0 0 12px rgba(0, 235, 212, 0.3)' }}>NiraNexus</span>{' '}
+            <span style={{ color: '#ffffff' }}>Model Council</span>
+          </h1>
+        </div>
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#64748b', maxWidth: 560, margin: '0 auto', lineHeight: 1.6 }}>
+          An engineering specification for the deliberative infrastructure powering NiraNexus-OS.
+          Not a marketing page &mdash; a system transparency document.
+        </p>
+      </section>
+
+      <Divider />
+
+      {/* ═══ SECTION 1 — THE DELIBERATION STACK ═══ */}
+      <section style={{ padding: '3rem 2rem', maxWidth: 900, margin: '0 auto' }}>
+        <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '2rem', textAlign: 'center' }}>
+          The Mechanism
+        </h2>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1rem' }}>
+          <PhaseCard phase="01" title="Opening" label="Contextual Input" body="Models ingest the query, applying foundational system prompts. Each model independently formulates its initial hypothesis." />
+          <PhaseCard phase="02" title="Cross-Exam" label="Adversarial Logic" body="Models interrogate each other's assumptions and data. Unsupported claims are surfaced, challenged, and discarded." />
+          <PhaseCard phase="03" title="Rebuttal" label="Refinement" body="Models incorporate peer critique to strengthen positions. Weak arguments collapse; strong evidence gains consensus weight." />
+          <PhaseCard phase="04" title="Synthesis" label="Governed Verdict" body="The Council converges on a final, synthesized verdict. Validated against hardened protocols with a statistical confidence score." />
+        </div>
+      </section>
+
+      <Divider />
+
+      {/* ═══ SECTION 2 — USE CASES ═══ */}
+      <section style={{ padding: '3rem 2rem', maxWidth: 900, margin: '0 auto' }}>
+        <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '2rem', textAlign: 'center' }}>
+          Deliberation Blueprints
+        </h2>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1rem' }}>
+          <div style={{ padding: '1.5rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
+            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Market Intelligence</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+              Multi-model synthesis of technical analysis, macro indicators, and risk signals into high-conviction decision paths.
+            </p>
+          </div>
+          <div style={{ padding: '1.5rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
+            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Security & Compliance</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+              Automated SRE audits &mdash; scanning for insecure configurations, exposed variables, and deployment vulnerabilities via structured adversarial deliberation.
+            </p>
+          </div>
+          <div style={{ padding: '1.5rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
+            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Strategic Consulting</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+              Encoded business logic providing a structural Founder&apos;s lens to complex operational decisions with adversarial validation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <Divider />
+
+      {/* ═══ SECTION 3 — LIVE PROOF ═══ */}
+      <section style={{ padding: '3rem 2rem', maxWidth: 900, margin: '0 auto' }}>
+        <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '2rem', textAlign: 'center' }}>
+          System Observability
+        </h2>
+        <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+          {status ? (
+            <>
+              <LiveMetric value={status.debates} label="Proven Decisions" sub="[SOURCE: SUPABASE_DB]" />
+              <LiveMetric value={`${status.models}x`} label="Active Models" sub="[MULTI-MODEL STACK]" />
+              <LiveMetric value={status.status} label="System Status" sub="[RLS: ENFORCED]" />
+            </>
+          ) : statusError ? (
+            <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: '#64748b' }}>Telemetry unavailable</p>
+          ) : (
+            <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: '#64748b' }}>System initializing&hellip;</p>
+          )}
+        </div>
+      </section>
+
+      <Divider />
+
+      {/* ═══ SECTION 4 — FOUNDER'S LOGIC ═══ */}
+      <section style={{ padding: '3rem 2rem', maxWidth: 700, margin: '0 auto', textAlign: 'center' }}>
+        <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '1.5rem' }}>
+          The Founder&apos;s Logic
+        </h2>
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.95rem', color: '#ffffff', lineHeight: 1.8, maxWidth: 600, margin: '0 auto' }}>
+          NiraNexus-OS was born from the conviction that AI shouldn&apos;t just generate text &mdash; it should deliberate like an expert.
+          This Council is the implementation of that conviction. By subjecting frontier models to adversarial cross-examination before
+          committing a verdict to our hardened Supabase backend, we enforce mechanical compliance at every layer.
+          This is not a wrapper. This is governance-first infrastructure.
+        </p>
+        <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '1.5rem', opacity: 0.6 }}>
+          Founded by Rakesh Maheswaran. Combining a 2012 consulting framework with modern systems engineering.
+        </p>
+      </section>
+
+      <Divider />
+
+      {/* ═══ CTA ═══ */}
+      <section style={{ padding: '3rem 2rem', maxWidth: 500, margin: '0 auto', textAlign: 'center' }}>
+        <a
+          href="https://model-council.niranexus.com"
+          style={{
+            display: 'inline-block',
+            padding: '0.9rem 2.5rem',
+            backgroundColor: '#00ebd4',
+            color: '#05070f',
+            fontFamily: 'var(--font-display)',
+            fontSize: '1.1rem',
+            fontWeight: 700,
+            borderRadius: 50,
+            textDecoration: 'none',
+            boxShadow: '0 4px 20px rgba(0, 235, 212, 0.35)',
+          }}
+        >
+          Click to Deliberate
+        </a>
+        <div style={{ marginTop: '1.5rem', padding: '1rem', backgroundColor: 'rgba(0, 235, 212, 0.05)', borderRadius: 8, border: '1px solid rgba(0, 235, 212, 0.12)' }}>
+          <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', margin: 0, letterSpacing: '0.5px', textTransform: 'uppercase' }}>
+            [SYSTEM_ACCESS_NOTICE]
+          </p>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.78rem', color: '#94a3b8', margin: '0.5rem 0 0', lineHeight: 1.5 }}>
+            Accessing the Council requires authenticated session handling via Google OAuth to maintain data integrity and audit trails. The free tier includes 21 debates.
+          </p>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer style={{ padding: '2rem', textAlign: 'center' }}>
+        <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.55rem', color: '#64748b', opacity: 0.5 }}>
+          NiraNexus Ltd — Registered in England and Wales &nbsp;|&nbsp; <a href="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: '#64748b' }}>Privacy</a> &nbsp;|&nbsp; <a href="/terms" target="_blank" rel="noopener noreferrer" style={{ color: '#64748b' }}>Terms</a>
+        </p>
+      </footer>
+    </main>
+  );
+}
+
+function PhaseCard({ phase, title, label, body }: { phase: string; title: string; label: string; body: string }) {
+  return (
+    <div style={{ padding: '1.5rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)', transition: 'transform 0.2s, border-color 0.2s' }}>
+      <div style={{ fontFamily: 'var(--font-mono)', fontSize: '1.2rem', color: '#00ebd4', fontWeight: 700, marginBottom: '0.5rem' }}>
+        {phase}.
+      </div>
+      <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#ffffff', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.25rem' }}>
+        {title}
+      </h3>
+      <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.55rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.75rem' }}>
+        {label}
+      </p>
+      <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+        {body}
+      </p>
+    </div>
+  );
+}
+
+function LiveMetric({ value, label, sub }: { value: string | number; label: string; sub: string }) {
+  return (
+    <div style={{ padding: '1.25rem 1.75rem', backgroundColor: 'rgba(10, 14, 26, 0.5)', borderRadius: 12, border: '1px solid rgba(0, 235, 212, 0.08)', minWidth: 150, textAlign: 'center' }} role="status">
+      <div style={{ fontFamily: 'var(--font-mono)', fontSize: '1.6rem', color: '#00ebd4', fontWeight: 700, textShadow: '0 0 14px rgba(0, 235, 212, 0.3)' }}>{value}</div>
+      <div style={{ fontFamily: 'var(--font-display)', fontSize: '0.85rem', color: '#ffffff', marginTop: '0.25rem' }}>{label}</div>
+      <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.55rem', color: '#64748b', marginTop: '0.3rem', textTransform: 'uppercase', letterSpacing: '1px' }}>{sub}</div>
+    </div>
+  );
+}
+
+function Divider() {
+  return <div style={{ height: 1, background: 'linear-gradient(to right, transparent, rgba(0, 235, 212, 0.15), transparent)', margin: '0 2rem' }} aria-hidden="true" />;
+}
