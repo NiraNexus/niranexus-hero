@@ -98,9 +98,13 @@ export default function Home() {
         </a>
 
         {/* Scroll cue */}
-        <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#64748b', marginTop: '3rem', opacity: 0.5, letterSpacing: '2px' }}>
+        <button
+          onClick={() => window.scrollTo({ top: window.innerHeight * 0.8, behavior: 'smooth' })}
+          style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#64748b', marginTop: '3rem', opacity: 0.5, letterSpacing: '2px', background: 'none', border: 'none', cursor: 'pointer' }}
+          aria-label="Scroll to next section"
+        >
           SCROLL
-        </p>
+        </button>
       </section>
 
       <Divider />
