@@ -154,7 +154,7 @@ export default function Home() {
 
           <div style={{ marginTop: '1.5rem', padding: '2rem', backgroundColor: 'rgba(10, 14, 26, 0.25)', borderRadius: 12, border: '1px dashed rgba(0, 235, 212, 0.06)', opacity: 0.6 }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.75rem' }}>
-              <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', color: '#ffffff', margin: 0 }}>Blueprint Engine</h3>
+              <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', color: '#ffffff', margin: 0 }}>Next Component</h3>
               <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#ffc107', backgroundColor: 'rgba(255, 193, 7, 0.1)', padding: '0.2rem 0.7rem', borderRadius: 10, textTransform: 'uppercase', letterSpacing: '1px' }}>IN DEVELOPMENT</span>
             </div>
             <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
