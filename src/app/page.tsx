@@ -47,6 +47,8 @@ export default function Home() {
           ═══════════════════════════════════════════════════════════ */}
       <section style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '75vh', padding: '3rem 2rem', textAlign: 'center' }} aria-label="Founder introduction">
 
+        <img src="/logo.svg" alt="" style={{ width: 64, height: 64, marginBottom: '1rem' }} aria-hidden="true" />
+
         <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2.5rem, 6vw, 5rem)', color: '#00ebd4', textShadow: '0 0 32px rgba(0, 235, 212, 0.3)', margin: 0 }}>
           NiraNexus
         </h1>
