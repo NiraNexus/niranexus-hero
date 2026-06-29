@@ -1,0 +1,186 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════════════════════════
+   NIRANEXUS TIFFANY BLUE COLOR SYSTEM
+   Tiffany Blue (#00ebd4) on Deep Space Navy (#05070f).
+   ═══════════════════════════════════════════════════════════════ */
+
+@theme {
+  /* === FOUNDATION — Page & Surfaces === */
+  --color-nira-navy: #05070f;           /* Page background — Deep Space Navy */
+  --color-nira-navy-surface: #0a0e1a;  /* Cards, inputs — 1 step above page */
+  --color-nira-navy-elevated: #0f1424; /* Elevated panels (verdict) — 2 steps */
+  --color-nira-navy-border: #1a2035;   /* Borders, dividers, scrollbars */
+
+  /* === BRAND ACCENT — Tiffany Blue === */
+  --color-nira-accent: #00ebd4;        /* Tiffany Blue — universal accent */
+  --color-nira-accent-light: #00ffc4;  /* Hover states, glow */
+  --color-nira-accent-dim: #008f81;    /* Dark teal — borders, muted */
+  --color-nira-accent-glow: rgba(0, 235, 212, 0.25); /* Glow effects */
+
+  /* === TEXT === */
+  --color-nira-white: #ffffff;         /* Headings, primary text */
+  --color-nira-slate: #cbd5e1;         /* Body text, high contrast */
+  --color-nira-muted: #64748b;         /* Footer, decorative */
+
+  /* === SEMANTIC === */
+  --color-nira-error: #FF6B6B;         /* Errors, failures, danger */
+  --color-nira-success: #22C55E;       /* Success, completion */
+
+  /* === INPUT SURFACES === */
+  --color-nira-ink: #030408;           /* Jet Black — input backgrounds */
+
+  /* === FONTS === */
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body: 'Source Serif 4', Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+
+  /* === ALIASES — backward compat with existing Tailwind classes === */
+  --color-navy: var(--color-nira-navy);
+  --color-navy-light: var(--color-nira-navy-surface);
+  --color-blue: var(--color-nira-navy-elevated);
+  --color-blue-dim: var(--color-nira-navy-border);
+  --color-gold: var(--color-nira-accent);
+  --color-gold-light: var(--color-nira-accent-light);
+  --color-gold-dim: var(--color-nira-accent-dim);
+  --color-frost: var(--color-nira-white);
+  --color-frost-dim: var(--color-nira-slate);
+  --color-ink: var(--color-nira-ink);
+  --color-error: var(--color-nira-error);
+}
+
+@layer base {
+  *:focus-visible {
+    outline: 2px solid var(--color-nira-accent);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  body {
+    @apply bg-navy text-frost antialiased;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    @apply tracking-tight;
+  }
+
+  ::selection {
+    @apply bg-gold/20;
+    color: var(--color-nira-accent);
+  }
+}
+
+/* Glass card — semi-transparent with backdrop blur */
+.glass-card {
+  background: rgba(10, 14, 26, 0.5);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 235, 212, 0.08);
+  border-radius: 12px;
+}
+
+/* Scrollable model card window */
+.model-card-scroll {
+  max-height: 280px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-nira-navy-border) transparent;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--color-nira-navy-border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-nira-slate); }
+
+/* Tiffany ruled line */
+.rule {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-nira-accent-dim), transparent);
+  border: none;
+  margin: 2rem 0;
+}
+
+/* Fade-in animation */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-in {
+  animation: fade-in 0.4s ease-out;
+}
+
+/* Typing cursor */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+/* Card style for debate testimony */
+.testimony-card {
+  @apply bg-navy-light border-l-4 border-gold/40 rounded-r-lg p-5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.testimony-card h1, .testimony-card h2, .testimony-card h3 {
+  font-family: var(--font-display);
+  @apply text-gold;
+}
+
+.testimony-card p, .testimony-card li {
+  @apply text-frost/85 leading-relaxed;
+}
+
+.testimony-card code {
+  @apply text-gold bg-navy px-1.5 py-0.5 rounded text-sm font-mono;
+}
+
+/* Error state */
+.error-banner {
+  @apply bg-navy-light border border-error/30 rounded-lg p-5;
+}
+
+.error-banner h3 {
+  font-family: var(--font-display);
+  @apply text-error text-lg;
+}
+
+/* Progress indicator */
+.progress-dot {
+  @apply inline-block w-2 h-2 rounded-full;
+}
+
+.progress-dot.active {
+  background-color: #00ebd4;
+  box-shadow: 0 0 8px rgba(0, 235, 212, 0.4);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.progress-dot.complete {
+  background-color: rgba(0, 235, 212, 0.6);
+}
+
+.progress-dot.failed {
+  @apply bg-error/60;
+}
+
+/* Question persistence */
+.debate-question {
+  @apply rounded-lg p-4 mb-4;
+  background-color: var(--color-nira-navy-surface);
+  border: 1px solid rgba(0, 235, 212, 0.12);
+}
+
+.debate-question blockquote {
+  @apply text-frost/70 italic border-l-2 border-gold/30 pl-4 font-body;
+}
+
+/* Error toast animation */
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
