@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 interface SystemStatus {
   debates: number;
@@ -156,6 +157,9 @@ export default function Home() {
               </p>
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', marginTop: '1rem', opacity: 0.7 }}>
                 model-council.niranexus.com &rarr;
+              </p>
+            <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', marginTop: '0.5rem', opacity: 0.7 }}>
+                <Link href="/model-council" style={{ color: '#00ebd4', textDecoration: 'none' }}>Read the specification &rarr;</Link>
               </p>
             </div>
           </a>
