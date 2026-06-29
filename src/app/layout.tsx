@@ -31,6 +31,7 @@ export const metadata: Metadata = {
     description: "Hardened deliberative AI infrastructure. Not a chatbot — an Agentic Fortress.",
     siteName: "NiraNexus",
     type: "website",
+    images: [{ url: "https://niranexus.com/og-image.svg", width: 1200, height: 630 }],
   },
 };
 
