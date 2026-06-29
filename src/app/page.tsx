@@ -137,8 +137,10 @@ export default function Home() {
             Each component is a piece of the NiraNexus-OS. Not standalone products &mdash; a unified agentic infrastructure.
           </p>
 
-          <a href="https://model-council.niranexus.com" style={{ display: 'block', textDecoration: 'none', color: 'inherit' }} aria-label="Model Council — live product">
-            <div style={{ padding: '2rem', backgroundColor: 'rgba(10, 14, 26, 0.4)', borderRadius: 12, border: '1px solid rgba(0, 235, 212, 0.12)', transition: 'border-color 0.2s' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', maxWidth: 900, margin: '0 auto' }}>
+            {/* Model Council */}
+            <a href="https://model-council.niranexus.com" style={{ display: 'block', textDecoration: 'none', color: 'inherit', minWidth: 0 }} aria-label="Model Council — live product">
+            <div style={{ padding: '2rem', backgroundColor: 'rgba(10, 14, 26, 0.4)', borderRadius: 12, border: '1px solid rgba(0, 235, 212, 0.12)', transition: 'border-color 0.2s', height: '100%' }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.75rem' }}>
                 <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', color: '#ffffff', margin: 0 }}>Model Council</h3>
                 <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#22c55e', backgroundColor: 'rgba(34, 197, 94, 0.1)', padding: '0.2rem 0.7rem', borderRadius: 10, textTransform: 'uppercase', letterSpacing: '1px' }} role="status">LIVE</span>
@@ -152,14 +154,16 @@ export default function Home() {
             </div>
           </a>
 
-          <div style={{ marginTop: '1.5rem', padding: '2rem', backgroundColor: 'rgba(10, 14, 26, 0.25)', borderRadius: 12, border: '1px dashed rgba(0, 235, 212, 0.06)', opacity: 0.6 }}>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.75rem' }}>
-              <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', color: '#ffffff', margin: 0 }}>Next Component</h3>
-              <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#ffc107', backgroundColor: 'rgba(255, 193, 7, 0.1)', padding: '0.2rem 0.7rem', borderRadius: 10, textTransform: 'uppercase', letterSpacing: '1px' }}>IN DEVELOPMENT</span>
+            {/* Next Component */}
+            <div style={{ padding: '2rem', backgroundColor: 'rgba(10, 14, 26, 0.25)', borderRadius: 12, border: '1px dashed rgba(0, 235, 212, 0.06)', opacity: 0.6, minWidth: 0 }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.75rem' }}>
+                <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', color: '#ffffff', margin: 0 }}>Next Component</h3>
+                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#ffc107', backgroundColor: 'rgba(255, 193, 7, 0.1)', padding: '0.2rem 0.7rem', borderRadius: 10, textTransform: 'uppercase', letterSpacing: '1px' }}>IN DEVELOPMENT</span>
+              </div>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+                The next component of the NiraNexus-OS. What gets built is determined by what the infrastructure makes possible.
+              </p>
             </div>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
-              The next component of the NiraNexus-OS. What gets built is determined by what the infrastructure makes possible.
-            </p>
           </div>
         </section>
       </RevealSection>
