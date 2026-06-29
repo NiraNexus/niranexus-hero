@@ -1,18 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
-  <!-- Nexus node — abstract "N" formed by intersecting paths -->
-  <circle cx="60" cy="60" r="54" stroke="#00ebd4" stroke-width="2" opacity="0.3"/>
-  <circle cx="60" cy="60" r="42" stroke="#00ebd4" stroke-width="1.5" opacity="0.15"/>
+  <!-- Bounding ring — matched stroke weight -->
+  <circle cx="60" cy="60" r="56" stroke="#00ebd4" stroke-width="2.5" opacity="0.18"/>
 
-  <!-- Left arc (ascending) -->
-  <path d="M 30 85 L 30 35 Q 30 20 50 20 L 75 20" stroke="#00ebd4" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <!-- Four deliberation paths converging to center -->
+  <path d="M 20 20 L 54 54" stroke="#00ebd4" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 100 20 L 66 54" stroke="#00ebd4" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 20 100 L 54 66" stroke="#00ebd4" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 100 100 L 66 66" stroke="#00ebd4" stroke-width="2.5" stroke-linecap="round"/>
 
-  <!-- Right arc (descending) -->
-  <path d="M 90 35 L 90 85 Q 90 100 70 100 L 45 100" stroke="#00ebd4" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <!-- Abstract "N" — verticals + diagonal -->
+  <path d="M 28 88 L 28 32" stroke="#00ebd4" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 28 32 L 88 88" stroke="#00ebd4" stroke-width="2.5" stroke-linecap="round" opacity="0.45"/>
+  <path d="M 88 88 L 88 32" stroke="#00ebd4" stroke-width="2.5" stroke-linecap="round"/>
 
-  <!-- Center node -->
-  <circle cx="60" cy="60" r="5" fill="#00ebd4"/>
-  <circle cx="60" cy="60" r="10" stroke="#00ebd4" stroke-width="1" opacity="0.4"/>
-
-  <!-- Connection glow -->
-  <circle cx="60" cy="60" r="16" fill="#00ebd4" opacity="0.08"/>
+  <!-- Center node — the nexus -->
+  <circle cx="60" cy="60" r="6" fill="#00ebd4"/>
+  <circle cx="60" cy="60" r="15" stroke="#00ebd4" stroke-width="1" opacity="0.22"/>
 </svg>
