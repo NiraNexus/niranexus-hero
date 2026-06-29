@@ -22,6 +22,10 @@ const ibmPlexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "NiraNexus — Agentic Operating System",
   description: "Hardened deliberative AI infrastructure. Multi-model deliberation, persistent governance, systems-grade architecture. Founded by Rakesh Maheswaran.",
+  icons: {
+    icon: "/favicon.svg",
+    apple: "/logo.svg",
+  },
   openGraph: {
     title: "NiraNexus — Agentic Operating System",
     description: "Hardened deliberative AI infrastructure. Not a chatbot — an Agentic Fortress.",
