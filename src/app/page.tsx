@@ -204,7 +204,7 @@ export default function Home() {
             Governance is not an afterthought. Every layer of NiraNexus-OS enforces its own integrity.
           </p>
           <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Badge label="Encryption" value="v2.0-lite" detail="Data-in-transit protection" />
+            <Badge label="Framework" value="v3.0-lite" detail="8-phase governance" />
             <Badge label="Pre-Code Gate" value="14 Checks" detail="Mechanical enforcement" />
             <Badge label="RLS Policies" value="Enforced" detail="Row-Level Security" />
             <Badge label="Authentication" value="OAuth 2.0" detail="Google + JWT" />
