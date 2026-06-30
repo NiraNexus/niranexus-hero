@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { ScrollToTop } from '@/components/ScrollToTop';
 
 interface SystemStatus {
   debates: number;
@@ -167,6 +168,7 @@ export default function ModelCouncilPage() {
           NiraNexus Ltd — Registered in England and Wales &nbsp;|&nbsp; <a href="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: '#64748b' }}>Privacy</a> &nbsp;|&nbsp; <a href="/terms" target="_blank" rel="noopener noreferrer" style={{ color: '#64748b' }}>Terms</a>
         </p>
       </footer>
+      <ScrollToTop />
     </main>
   );
 }
