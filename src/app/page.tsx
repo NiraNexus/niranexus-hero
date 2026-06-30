@@ -133,7 +133,7 @@ export default function Home() {
             Deliberation is the antidote to AI hallucination. My systems don&apos;t just guess &mdash; they cross-examine, synthesize, and enforce governance at every layer.
           </p>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))', gap: '1.5rem' }}>
             <Principle title="Deliberation over Generation" body="Four frontier models debate before answering. Three rounds of Opening Statements, Cross-Examination, and Rebuttal. One synthesized verdict. No single-model hallucination survives cross-examination." tags={['GPT-5.5 Pro', 'DeepSeek R1', 'Claude Sonnet', 'Qwen 3.7']} />
             <Principle title="Traceable Deliberation" body="Every deliberation produces a session-scoped, exportable artifact stored in a hardened Supabase backend. The adversarial process is preserved — your decision-path is traceable, not disposable." />
             <Principle title="Hardened over Open" body="Pre-code gates enforce mechanical compliance before any line ships. Row-Level Security governs every database query. OAuth 2.0 with JWT verification. AI infrastructure without governance is a liability." />
