@@ -51,3 +51,11 @@ built-in protections on MC card.
 
 **Learnings:** Deploy gate must be mechanical, not self-reported. Brand claims must
 be verifiable against deployed infrastructure.
+
+## Retro: 2026-07-01 (Session 12 continued)
+
+**Shipped:** — (hero page was not modified this session)
+
+**Decisions:** Council deliberation on pricing strategy adopted as binding product policy. Next steps for hero page: add `/verdicts` or `/deliberations` page as content engine, publish Council verdicts as marketing assets.
+
+**Provenance summary:** 1 [CLEAN], 0 [WORKAROUND], 0 [DEBUG-SESSION]
