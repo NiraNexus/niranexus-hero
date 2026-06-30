@@ -166,7 +166,7 @@ export default function Home() {
               <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
                 A multi-model deliberation engine. Opening Statements &rarr; Cross-Examination &rarr; Rebuttal &rarr; Synthesis. Google OAuth, quota enforcement, persistent verdicts.
               </p>
-              <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#64748b', marginTop: '0.75rem', lineHeight: 1.6 }}>Built-in Protections: Pre-debate cost alerts &middot; Mid-debate checkpoints &middot; Quorum enforcement</p>
+              <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '0.75rem', lineHeight: 1.6 }}>Built-in Protections: Pre-debate cost alerts &middot; Mid-debate checkpoints &middot; Quorum enforcement</p>
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', marginTop: '1rem', opacity: 0.7 }}>
                 model-council.niranexus.com &rarr;
               </p>
@@ -212,7 +212,7 @@ export default function Home() {
           <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '3rem' }}>
             NiraNexus-OS &copy; {new Date().getFullYear()} &mdash; Founded by Rakesh Maheswaran. Agentic infrastructure, not a wrapper.
           </p>
-          <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#64748b', marginTop: '0.75rem', opacity: 0.6 }}>
+          <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '0.75rem' }}>
             NiraNexus Ltd — Registered in England and Wales &nbsp;|&nbsp; <a href="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: '#64748b' }}>Privacy</a> &nbsp;|&nbsp; <a href="/terms" target="_blank" rel="noopener noreferrer" style={{ color: '#64748b' }}>Terms</a>
           </p>
         </footer>

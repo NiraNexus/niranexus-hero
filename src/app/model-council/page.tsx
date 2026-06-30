@@ -60,7 +60,7 @@ export default function ModelCouncilPage() {
           <PhaseCard phase="03" title="Rebuttal" label="Refinement" body="Models incorporate peer critique to strengthen positions. Weak arguments collapse; strong evidence gains consensus weight." />
           <PhaseCard phase="04" title="Synthesis" label="Governed Verdict" body="The Council converges on a final, synthesized verdict. Validated against hardened protocols with a statistical confidence score." />
         </div>
-        <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#64748b', textAlign: 'center', marginTop: '1.5rem', opacity: 0.6 }}>
+        <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#94a3b8', textAlign: 'center', marginTop: '1.5rem', padding: '0.75rem 1rem', backgroundColor: 'rgba(0, 235, 212, 0.05)', borderRadius: 8, border: '1px solid rgba(0, 235, 212, 0.12)' }}>
           Deliberations may conclude prior to Round 3 if a definitive verdict is reached or if budget thresholds are triggered, ensuring cost-efficiency and protection.
         </p>
       </section>
