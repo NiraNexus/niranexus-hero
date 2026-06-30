@@ -59,8 +59,8 @@ export default function Home() {
           Named for my daughter <strong style={{ color: '#00ebd4' }}>Nishka</strong>. NiraNexus. Born from the conviction that AI shouldn&apos;t just generate text &mdash; it should deliberate like a hardened operational logic partner.
         </p>
 
-        <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#64748b', maxWidth: 560, marginTop: '1rem', lineHeight: 1.7 }}>
-          Combining over a decade of systems thinking with a multi-model stack, I am building the infrastructure I wish I had: an <strong style={{ color: '#ffffff' }}>Agentic Fortress</strong>.
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', maxWidth: 620, marginTop: '1rem', lineHeight: 1.7 }}>
+          NiraNexus compares independent model reasoning, checks claims against live-retrieved sources, and returns a verdict with an auditable Evidence Basis.
         </p>
 
         {/* Live Metrics */}
@@ -137,6 +137,7 @@ export default function Home() {
             <Principle title="Deliberation over Generation" body="Four frontier models debate before answering. Three rounds of Opening Statements, Cross-Examination, and Rebuttal. One synthesized verdict. No single-model hallucination survives cross-examination." tags={['GPT-5.5 Pro', 'DeepSeek R1', 'Claude Sonnet', 'Qwen 3.7']} />
             <Principle title="Traceable Deliberation" body="Every deliberation produces a session-scoped, exportable artifact stored in a hardened Supabase backend. The adversarial process is preserved — your decision-path is traceable, not disposable." />
             <Principle title="Hardened over Open" body="Pre-code gates enforce mechanical compliance before any line ships. Row-Level Security governs every database query. OAuth 2.0 with JWT verification. AI infrastructure without governance is a liability." />
+            <Principle title="Evidence Basis" body="Every verdict includes an auditable Evidence Basis. Claims are labeled VERIFIED (retrieved evidence supports the claim), DISPUTED (conflicting evidence detected), or UNVERIFIED (insufficient data). The system surfaces its own limitations — not fabricated confidence." />
           </div>
         </section>
       </RevealSection>
@@ -164,9 +165,9 @@ export default function Home() {
                 <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#22c55e', backgroundColor: 'rgba(34, 197, 94, 0.1)', padding: '0.2rem 0.7rem', borderRadius: 10, textTransform: 'uppercase', letterSpacing: '1px' }} role="status">LIVE</span>
               </div>
               <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
-                A multi-model deliberation engine. Opening Statements &rarr; Cross-Examination &rarr; Rebuttal &rarr; Synthesis. Google OAuth, quota enforcement, persistent verdicts.
+                A multi-model deliberation engine with auditable source verification. Opening Statements → Cross-Examination → Rebuttal → Synthesis. Google OAuth, quota enforcement, persistent verdicts with Evidence Basis.
               </p>
-              <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '0.75rem', lineHeight: 1.6 }}>Built-in Protections: Pre-debate cost alerts &middot; Mid-debate checkpoints &middot; Quorum enforcement</p>
+              <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '0.75rem', lineHeight: 1.6 }}>Built-in Protections: Pre-debate cost alerts &middot; Mid-debate checkpoints &middot; Quorum enforcement &middot; Live web search + source verification</p>
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', marginTop: '1rem', opacity: 0.7 }}>
                 model-council.niranexus.com &rarr;
               </p>

@@ -96,6 +96,46 @@ export default function ModelCouncilPage() {
 
       <Divider />
 
+      {/* ═══ EVIDENCE BASIS SPECIFICATION ═══ */}
+      <section style={{ padding: '3rem 2rem', maxWidth: 700, margin: '0 auto' }}>
+        <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '2rem', textAlign: 'center' }}>
+          Evidence Basis
+        </h2>
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.7, textAlign: 'center', maxWidth: 560, margin: '0 auto 2rem' }}>
+          Every verdict includes an auditable Evidence Basis — an audit trail of live-retrieved sources, not a bibliography of fabricated references. Claims are labeled against evidence, not asserted from parametric memory.
+        </p>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
+          <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
+            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#4ADE80', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>VERIFIED</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+              Retrieved evidence directly supports the claim. Source URL, title, and retrieval timestamp captured.
+            </p>
+          </div>
+          <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
+            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#FFC107', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>DISPUTED</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+              Retrieved evidence conflicts exist. The system actively detects data contradictions rather than blindly aggregating sources.
+            </p>
+          </div>
+          <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
+            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>UNVERIFIED</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+              Information is insufficient, stale, or low-quality. The system surfaces its own limitations — no fabricated confidence.
+            </p>
+          </div>
+        </div>
+
+        <div style={{ marginTop: '2rem', padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.2)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.06)' }}>
+          <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Operational Mechanics</h3>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.7, margin: 0 }}>
+            Per-model source attribution ensures clear provenance for every claim. Evidence is retrieved via live web search during deliberation — never from parametric memory. Mechanical anti-fabrication discipline is enforced: sources without retrievable URLs are rejected. Claims without supporting evidence are flagged, not invented.
+          </p>
+        </div>
+      </section>
+
+      <Divider />
+
       {/* ═══ SECTION 3 — LIVE PROOF ═══ */}
       <section style={{ padding: '3rem 2rem', maxWidth: 900, margin: '0 auto' }}>
         <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '2rem', textAlign: 'center' }}>
@@ -160,7 +200,7 @@ export default function ModelCouncilPage() {
             [SYSTEM_ACCESS_NOTICE]
           </p>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.78rem', color: '#94a3b8', margin: '0.5rem 0 0', lineHeight: 1.5 }}>
-            Accessing the Council requires authenticated session handling via Google OAuth to maintain data integrity and audit trails. The free tier includes 21 debates.
+            Accessing the Council requires authenticated session handling via Google OAuth to maintain data integrity and audit trails.
           </p>
         </div>
       </section>
