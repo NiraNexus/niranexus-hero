@@ -126,7 +126,7 @@ export default function Home() {
           ═══════════════════════════════════════════════════════════ */}
       <RevealSection>
         <section style={{ padding: '5rem 2rem', maxWidth: 800, margin: '0 auto' }} aria-label="Architecture thesis">
-          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.6rem', color: '#ffffff', textAlign: 'center', marginBottom: '0.5rem' }}>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.4rem', color: '#ffffff', textAlign: 'center', marginBottom: '0.5rem' }}>
             The Architecture of Trust
           </h2>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#64748b', textAlign: 'center', maxWidth: 520, margin: '0 auto 3rem', lineHeight: 1.6 }}>
@@ -231,7 +231,7 @@ export default function Home() {
           ═══════════════════════════════════════════════════════════ */}
       <RevealSection>
         <footer style={{ padding: '4rem 2rem', textAlign: 'center', maxWidth: 700, margin: '0 auto' }} aria-label="System governance and founder">
-          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.2rem', color: '#ffffff', marginBottom: '0.5rem' }}>The Hardening</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.4rem', color: '#ffffff', marginBottom: '0.5rem' }}>The Hardening</h2>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: '#64748b', marginBottom: '2rem', maxWidth: 480, margin: '0 auto 2rem', lineHeight: 1.5 }}>
             Governance is not an afterthought. Every layer of NiraNexus-OS enforces its own integrity.
           </p>
