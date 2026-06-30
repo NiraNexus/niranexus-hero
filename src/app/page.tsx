@@ -56,7 +56,7 @@ export default function Home() {
         </h1>
 
         <p style={{ fontFamily: 'var(--font-body)', fontSize: 'clamp(1.05rem, 1.7vw, 1.25rem)', color: '#ffffff', maxWidth: 620, marginTop: '1.5rem', lineHeight: 1.8 }}>
-          Named for my daughter <strong style={{ color: '#00ebd4' }}>Nishka</strong>. Born from the conviction that AI shouldn&apos;t just generate text &mdash; it should deliberate like an expert.
+          Named for my daughter <strong style={{ color: '#00ebd4' }}>Nishka</strong>. NiraNexus. Born from the conviction that AI shouldn&apos;t just generate text &mdash; it should deliberate like a hardened operational logic partner.
         </p>
 
         <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#64748b', maxWidth: 560, marginTop: '1rem', lineHeight: 1.7 }}>
@@ -135,7 +135,7 @@ export default function Home() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.5rem' }}>
             <Principle title="Deliberation over Generation" body="Four frontier models debate before answering. Three rounds of Opening Statements, Cross-Examination, and Rebuttal. One synthesized verdict. No single-model hallucination survives cross-examination." tags={['GPT-5.5 Pro', 'DeepSeek R1', 'Claude Sonnet', 'Qwen 3.7']} />
-            <Principle title="Persistence over Ephemerality" body="Every claim, dissenting opinion, and confidence score is stored in Supabase. The system learns from its own reasoning history — debates are auditable, not disposable." />
+            <Principle title="Traceable Deliberation" body="Every deliberation produces a session-scoped, exportable artifact stored in a hardened Supabase backend. The adversarial process is preserved — your decision-path is traceable, not disposable." />
             <Principle title="Hardened over Open" body="Pre-code gates enforce mechanical compliance before any line ships. Row-Level Security governs every database query. OAuth 2.0 with JWT verification. AI infrastructure without governance is a liability." />
           </div>
         </section>
@@ -166,6 +166,7 @@ export default function Home() {
               <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
                 A multi-model deliberation engine. Opening Statements &rarr; Cross-Examination &rarr; Rebuttal &rarr; Synthesis. Google OAuth, quota enforcement, persistent verdicts.
               </p>
+              <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#64748b', marginTop: '0.75rem', lineHeight: 1.6 }}>Built-in Protections: Pre-debate cost alerts &middot; Mid-debate checkpoints &middot; Quorum enforcement</p>
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', marginTop: '1rem', opacity: 0.7 }}>
                 model-council.niranexus.com &rarr;
               </p>
@@ -203,7 +204,7 @@ export default function Home() {
             Governance is not an afterthought. Every layer of NiraNexus-OS enforces its own integrity.
           </p>
           <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Badge label="Framework" value="v3.0-lite" detail="8-phase governance" />
+            <Badge label="Encryption" value="v2.0-lite" detail="Data-in-transit protection" />
             <Badge label="Pre-Code Gate" value="14 Checks" detail="Mechanical enforcement" />
             <Badge label="RLS Policies" value="Enforced" detail="Row-Level Security" />
             <Badge label="Authentication" value="OAuth 2.0" detail="Google + JWT" />
