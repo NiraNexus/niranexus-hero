@@ -165,12 +165,6 @@ export default function ModelCouncilPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer style={{ padding: '2rem', textAlign: 'center' }}>
-        <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.55rem', color: '#64748b', opacity: 0.5 }}>
-          NiraNexus Ltd — Registered in England and Wales &nbsp;|&nbsp; <a href="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: '#64748b' }}>Privacy</a> &nbsp;|&nbsp; <a href="/terms" target="_blank" rel="noopener noreferrer" style={{ color: '#64748b' }}>Terms</a>
-        </p>
-      </footer>
       <ScrollToTop />
     </main>
   );

@@ -209,12 +209,6 @@ export default function Home() {
             <Badge label="RLS Policies" value="Enforced" detail="Row-Level Security" />
             <Badge label="Authentication" value="OAuth 2.0" detail="Google + JWT" />
           </div>
-          <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '3rem' }}>
-            NiraNexus-OS &copy; {new Date().getFullYear()} &mdash; Founded by Rakesh Maheswaran. Agentic infrastructure, not a wrapper.
-          </p>
-          <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '0.75rem' }}>
-            NiraNexus Ltd — Registered in England and Wales &nbsp;|&nbsp; <a href="/privacy" target="_blank" rel="noopener noreferrer" style={{ color: '#64748b' }}>Privacy</a> &nbsp;|&nbsp; <a href="/terms" target="_blank" rel="noopener noreferrer" style={{ color: '#64748b' }}>Terms</a>
-          </p>
         </footer>
       </RevealSection>
     </main>

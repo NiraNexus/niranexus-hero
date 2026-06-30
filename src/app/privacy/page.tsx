@@ -33,9 +33,6 @@ export default function PrivacyPage() {
       <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.2rem', color: '#ffffff', marginTop: '2rem', marginBottom: '0.75rem' }}>6. Contact</h2>
       <p>For privacy inquiries, contact: privacy@niranexus.com</p>
 
-      <p style={{ marginTop: '3rem', color: '#64748b', fontSize: '0.85rem' }}>
-        NiraNexus Ltd — Registered in England and Wales.
-      </p>
       <ScrollToTop />
     </main>
   );

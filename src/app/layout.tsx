@@ -67,6 +67,14 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         {children}
+        <footer style={{ padding: '2rem', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b' }}>
+            NiraNexus-OS &copy; {new Date().getFullYear()} {'—'} Founded by Rakesh Maheswaran. Agentic infrastructure, not a wrapper.
+          </p>
+          <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '0.5rem' }}>
+            NiraNexus Ltd — Registered in England and Wales &nbsp;|&nbsp; <a href="/privacy" style={{ color: '#64748b' }}>Privacy</a> &nbsp;|&nbsp; <a href="/terms" style={{ color: '#64748b' }}>Terms</a>
+          </p>
+        </footer>
       </body>
     </html>
   );
