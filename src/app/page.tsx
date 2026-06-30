@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 interface SystemStatus {
   debates: number;
@@ -32,6 +32,7 @@ const REDUCED_MOTION = typeof window !== 'undefined' && window.matchMedia('(pref
 export default function Home() {
   const [status, setStatus] = useState<SystemStatus | null>(null);
   const [statusError, setStatusError] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     fetch('/api/status')
@@ -159,7 +160,9 @@ export default function Home() {
                 model-council.niranexus.com &rarr;
               </p>
             <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', marginTop: '0.5rem', opacity: 0.7 }}>
-                <Link href="/model-council" style={{ color: '#00ebd4', textDecoration: 'none' }}>Read the specification &rarr;</Link>
+                <span onClick={(e) => { e.preventDefault(); e.stopPropagation(); router.push('/model-council'); }} style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', marginTop: '0.5rem', opacity: 0.7, cursor: 'pointer' }}>
+                View Engineering Specification &rarr;
+              </span>
               </p>
             </div>
           </a>
