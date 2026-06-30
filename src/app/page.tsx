@@ -151,22 +151,22 @@ export default function Home() {
           <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '1rem' }}>Verdict Example</p>
           <div style={{ padding: '1.5rem', backgroundColor: 'rgba(10, 14, 26, 0.4)', borderRadius: 12, border: '1px solid rgba(0, 235, 212, 0.1)', textAlign: 'left', maxWidth: 560, margin: '0 auto' }}>
             <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.85rem', color: '#cbd5e1', lineHeight: 1.7, margin: 0 }}>
-              &ldquo;Adults require 7–9 hours of sleep per night. Chronic short sleep is associated with elevated cardiovascular risk and cognitive decline.&rdquo;
+              &ldquo;Deploying agentic AI without mechanical governance gates is operationally unsafe. Pre-code enforcement, RLS, and quorum-based model validation are the minimum viable controls before production.&rdquo;
             </p>
             <div style={{ marginTop: '1rem', paddingTop: '0.75rem', borderTop: '1px solid rgba(0, 235, 212, 0.08)' }}>
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Evidence Basis</p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: '0.6rem' }}>
                   <span style={{ color: '#4ADE80', flexShrink: 0 }}>VERIFIED</span>
-                  <span style={{ color: '#94a3b8' }}>Cappuccio et al. (2011), European Heart Journal</span>
+                  <span style={{ color: '#94a3b8' }}>Google — Agents Whitepaper (Nov 2025): guardrails required for production</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: '0.6rem' }}>
                   <span style={{ color: '#4ADE80', flexShrink: 0 }}>VERIFIED</span>
-                  <span style={{ color: '#94a3b8' }}>Hirshkowitz et al. (2015), Sleep Health Journal</span>
+                  <span style={{ color: '#94a3b8' }}>OWASP Top 10 for LLM Applications — prompt injection + output handling</span>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: '0.6rem' }}>
                   <span style={{ color: '#FFC107', flexShrink: 0 }}>DISPUTED</span>
-                  <span style={{ color: '#94a3b8' }}>Nature Reviews Neurology — conflicting evidence on mechanism</span>
+                  <span style={{ color: '#94a3b8' }}>Gartner — autonomous agents 'safe enough' by 2027 vs. 2028 (conflicting analyst timelines)</span>
                 </div>
               </div>
             </div>
