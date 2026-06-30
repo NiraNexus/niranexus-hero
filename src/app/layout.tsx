@@ -20,18 +20,30 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NiraNexus — Agentic Operating System",
-  description: "Hardened deliberative AI infrastructure. Multi-model deliberation, persistent governance, systems-grade architecture. Founded by Rakesh Maheswaran.",
+  title: "NiraNexus | Agentic Infrastructure & Deliberative AI Governance",
+  description: "NiraNexus-OS is a governance-first agentic infrastructure. We replace speculative generation with adversarial deliberation to ensure verifiable, audited output for high-stakes operational workflows.",
   icons: {
     icon: "/favicon.svg",
     apple: "/logo.svg",
   },
   openGraph: {
-    title: "NiraNexus — Agentic Operating System",
-    description: "Hardened deliberative AI infrastructure. Not a chatbot — an Agentic Fortress.",
+    title: "NiraNexus-OS | Deliberative Infrastructure for Agentic Workflows",
+    description: "Hardened agentic infrastructure powered by multi-model adversarial deliberation. Governance-first, not a wrapper.",
     siteName: "NiraNexus",
     type: "website",
     images: [{ url: "https://niranexus.com/og-image.svg", width: 1200, height: 630 }],
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NiraNexus",
+  "url": "https://niranexus.com",
+  "description": "Governance-first agentic infrastructure utilizing multi-model adversarial deliberation for verifiable AI output.",
+  "founder": {
+    "@type": "Person",
+    "name": "Rakesh Maheswaran",
   },
 };
 
@@ -50,6 +62,10 @@ export default function RootLayout({
           fontFamily: 'var(--font-body)',
         }}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {children}
       </body>
     </html>
