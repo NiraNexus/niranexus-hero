@@ -167,7 +167,7 @@ export default function ModelCouncilPage() {
           NiraNexus-OS was born from the conviction that AI shouldn&apos;t just generate text &mdash; it should deliberate like an expert.
           This Council is the implementation of that conviction. By subjecting frontier models to adversarial cross-examination before
           committing a verdict to our hardened Supabase backend, we enforce mechanical compliance at every layer.
-          This is not a wrapper. This is governance-first infrastructure.
+          Agentic infrastructure, not a wrapper.
         </p>
         <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '1.5rem', opacity: 0.6 }}>
           Founded by Rakesh Maheswaran. Combining a 2012 consulting framework with modern systems engineering.

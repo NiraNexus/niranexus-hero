@@ -133,11 +133,42 @@ export default function Home() {
             Deliberation is the antidote to AI hallucination. My systems don&apos;t just guess &mdash; they cross-examine, synthesize, and enforce governance at every layer.
           </p>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))', gap: '1.5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5rem' }}>
             <Principle title="Deliberation over Generation" body="Four frontier models debate before answering. Three rounds of Opening Statements, Cross-Examination, and Rebuttal. One synthesized verdict. No single-model hallucination survives cross-examination." tags={['GPT-5.5 Pro', 'DeepSeek R1', 'Claude Sonnet', 'Qwen 3.7']} />
             <Principle title="Traceable Deliberation" body="Every deliberation produces a session-scoped, exportable artifact stored in a hardened Supabase backend. The adversarial process is preserved — your decision-path is traceable, not disposable." />
             <Principle title="Hardened over Open" body="Pre-code gates enforce mechanical compliance before any line ships. Row-Level Security governs every database query. OAuth 2.0 with JWT verification. AI infrastructure without governance is a liability." />
             <Principle title="Evidence Basis" body="Every verdict includes an auditable Evidence Basis. Claims are labeled VERIFIED (retrieved evidence supports the claim), DISPUTED (conflicting evidence detected), or UNVERIFIED (insufficient data). The system surfaces its own limitations — not fabricated confidence." />
+          </div>
+        </section>
+      </RevealSection>
+
+      <Divider />
+
+      {/* Verdict example */}
+      <RevealSection>
+        <section style={{ padding: '3rem 2rem', maxWidth: 700, margin: '0 auto', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '1rem' }}>Verdict Example</p>
+          <div style={{ padding: '1.5rem', backgroundColor: 'rgba(10, 14, 26, 0.4)', borderRadius: 12, border: '1px solid rgba(0, 235, 212, 0.1)', textAlign: 'left', maxWidth: 560, margin: '0 auto' }}>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.85rem', color: '#cbd5e1', lineHeight: 1.7, margin: 0 }}>
+              &ldquo;Adults require 7–9 hours of sleep per night. Chronic short sleep is associated with elevated cardiovascular risk and cognitive decline.&rdquo;
+            </p>
+            <div style={{ marginTop: '1rem', paddingTop: '0.75rem', borderTop: '1px solid rgba(0, 235, 212, 0.08)' }}>
+              <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Evidence Basis</p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: '0.6rem' }}>
+                  <span style={{ color: '#4ADE80', flexShrink: 0 }}>VERIFIED</span>
+                  <span style={{ color: '#94a3b8' }}>Cappuccio et al. (2011), European Heart Journal</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: '0.6rem' }}>
+                  <span style={{ color: '#4ADE80', flexShrink: 0 }}>VERIFIED</span>
+                  <span style={{ color: '#94a3b8' }}>Hirshkowitz et al. (2015), Sleep Health Journal</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: '0.6rem' }}>
+                  <span style={{ color: '#FFC107', flexShrink: 0 }}>DISPUTED</span>
+                  <span style={{ color: '#94a3b8' }}>Nature Reviews Neurology — conflicting evidence on mechanism</span>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </RevealSection>
