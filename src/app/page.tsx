@@ -112,7 +112,8 @@ export default function Home() {
         {/* Scroll cue */}
         <button
           onClick={() => window.scrollTo({ top: window.innerHeight * 0.8, behavior: 'smooth' })}
-          style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#64748b', marginTop: '3rem', opacity: 0.5, letterSpacing: '2px', background: 'none', border: 'none', cursor: 'pointer' }}
+          style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#64748b', marginTop: '3rem', opacity: 0.5, letterSpacing: '2px', background: 'none', border: 'none', cursor: 'pointer', outline: 'none' }}
+          className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f]"
           aria-label="Scroll to next section"
         >
           SCROLL
@@ -203,7 +204,7 @@ export default function Home() {
                 model-council.niranexus.com &rarr;
               </p>
             <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', marginTop: '0.5rem', opacity: 0.7 }}>
-                <span onClick={(e) => { e.preventDefault(); e.stopPropagation(); router.push('/model-council'); }} style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', marginTop: '0.5rem', opacity: 0.7, cursor: 'pointer' }}>
+                <span onClick={(e) => { e.preventDefault(); e.stopPropagation(); router.push('/model-council'); }} style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', marginTop: '0.5rem', opacity: 0.7, cursor: 'pointer', outline: 'none' }} className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-1 focus-visible:ring-offset-[#05070f]" tabIndex={0} onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); e.stopPropagation(); router.push('/model-council'); } }} role="link">
                 View Engineering Specification &rarr;
               </span>
               </p>
