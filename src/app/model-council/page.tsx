@@ -60,6 +60,9 @@ export default function ModelCouncilPage() {
           <PhaseCard phase="03" title="Rebuttal" label="Refinement" body="Models incorporate peer critique to strengthen positions. Weak arguments collapse; strong evidence gains consensus weight." />
           <PhaseCard phase="04" title="Synthesis" label="Governed Verdict" body="The Council converges on a final, synthesized verdict. Validated against hardened protocols with a statistical confidence score." />
         </div>
+        <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#64748b', textAlign: 'center', marginTop: '1.5rem', opacity: 0.6 }}>
+          Deliberations may conclude prior to Round 3 if a definitive verdict is reached or if budget thresholds are triggered, ensuring cost-efficiency and protection.
+        </p>
       </section>
 
       <Divider />
@@ -83,7 +86,7 @@ export default function ModelCouncilPage() {
             </p>
           </div>
           <div style={{ padding: '1.5rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
-            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Strategic Consulting</h3>
+            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Systemic Consulting</h3>
             <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
               Encoded business logic providing a structural Founder&apos;s lens to complex operational decisions with adversarial validation.
             </p>
