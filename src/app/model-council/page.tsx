@@ -170,7 +170,7 @@ export default function ModelCouncilPage() {
           Agentic infrastructure, not a wrapper.
         </p>
         <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '1.5rem', opacity: 0.6 }}>
-          Founded by Rakesh Maheswaran. Combining a 2012 consulting framework with modern systems engineering.
+          Founded by Rakesh Maheswaran. Combining enterprise consulting rigour with modern systems engineering.
         </p>
       </section>
 

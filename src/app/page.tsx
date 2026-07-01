@@ -61,7 +61,7 @@ export default function Home() {
         </p>
 
         <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', maxWidth: 620, marginTop: '1rem', lineHeight: 1.7 }}>
-          NiraNexus compares independent model reasoning, checks claims against live-retrieved sources, and returns a verdict with an auditable Evidence Basis.
+          NiraNexus-OS is governance-first infrastructure for auditable AI deliberation.
         </p>
 
         {/* Live Metrics */}
