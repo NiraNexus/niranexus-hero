@@ -7,6 +7,7 @@ interface SystemStatus {
   debates: number;
   models: number;
   status: string;
+  conversionRate?: number;
 }
 
 function useReveal() {
@@ -70,12 +71,13 @@ export default function Home() {
               <Stat value={status.debates} label="Proven Decisions" sub="Audited via Supabase RLS" />
               <Stat value={`${status.models}x`} label="Active Models" sub="Multi-model deliberation stack" />
               <Stat value={status.status} label="System Status" sub="Framework v3.0-lite enforced" />
+              <Stat value={`${status.conversionRate ?? 0}%`} label="Conversion Rate" sub="Free → Paid users" />
             </>
           ) : statusError ? (
             <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: '#64748b' }}>System telemetry offline</p>
           ) : (
             <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-              {[1, 2, 3].map(i => (
+              {[1, 2, 3, 4].map(i => (
                 <div key={i} style={{ padding: '1.25rem 1.75rem', backgroundColor: 'rgba(10, 14, 26, 0.5)', borderRadius: 12, border: '1px solid rgba(0, 235, 212, 0.08)', minWidth: 150, textAlign: 'center' }}>
                   <div className="animate-pulse" style={{ width: 48, height: 24, backgroundColor: 'rgba(0, 235, 212, 0.1)', borderRadius: 4, margin: '0 auto' }} />
                   <div className="animate-pulse" style={{ width: 80, height: 12, backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: 3, margin: '0.5rem auto 0.25rem' }} />

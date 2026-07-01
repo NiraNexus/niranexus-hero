@@ -16,11 +16,20 @@ export async function GET() {
 
     if (error) throw error;
 
+    const { count: payingCount } = await supabase
+      .from('profiles')
+      .select('*', { count: 'exact', head: true })
+      .gt('credits_remaining', 0);
+
+    const uniqueUsers = count && count > 0 ? Math.max(1, Math.ceil(count / 5)) : 0;
+    const conversionPct = uniqueUsers > 0 ? Math.round(((payingCount ?? 0) / uniqueUsers) * 100) : 0;
+
     return NextResponse.json({
       debates: count ?? 0,
       models: 4,
       status: 'HARDENED',
       uptime: 'live',
+      conversionRate: conversionPct,
     });
   } catch {
     return NextResponse.json({
