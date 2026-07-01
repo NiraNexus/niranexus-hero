@@ -4,7 +4,7 @@ import { createClient } from '@supabase/supabase-js';
 export const runtime = 'edge';
 export const dynamic = 'force-dynamic';
 
-let _cached: { data: any; ts: number } | null = null;
+let _cached: { data: Record<string, number>; ts: number } | null = null;
 
 export async function GET() {
   // Return cached data within 60s window
@@ -30,7 +30,7 @@ export async function GET() {
     ]);
 
     const debatesTotal = totalRes.count ?? 0;
-    const uniqueUsers = new Set(usersRes.data?.map((d: any) => d.user_id)).size;
+    const uniqueUsers = new Set(usersRes.data?.map((d: { user_id: string }) => d.user_id)).size;
     const debatesToday = todayRes.count ?? 0;
     const totalUsers = uniqueUsers || 1; // avoid division by zero
     const payingUsers = payingRes.count ?? 0;
