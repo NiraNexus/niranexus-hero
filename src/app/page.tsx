@@ -197,9 +197,9 @@ export default function Home() {
                 <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#22c55e', backgroundColor: 'rgba(34, 197, 94, 0.1)', padding: '0.2rem 0.7rem', borderRadius: 10, textTransform: 'uppercase', letterSpacing: '1px' }} role="status">LIVE</span>
               </div>
               <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
-                A multi-model deliberation engine with auditable source verification. Opening Statements → Cross-Examination → Rebuttal → Synthesis. Google OAuth, quota enforcement, persistent verdicts with Evidence Basis.
-              </p>
-              <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '0.75rem', lineHeight: 1.6 }}>Built-in Protections: Pre-debate cost alerts &middot; Mid-debate checkpoints &middot; Quorum enforcement &middot; Live web search + source verification</p>
+                              A multi-model deliberation engine with auditable source verification. Opening Statements → Cross-Examination → Rebuttal → Synthesis. Google OAuth, quota enforcement, persistent verdicts with Evidence Basis. Export to PDF, Markdown, or JSON — every file signed with NiraNexus provenance.
+                            </p>
+                            <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '0.75rem', lineHeight: 1.6 }}>Built-in Protections: Pre-debate cost alerts &middot; Mid-debate checkpoints &middot; Quorum enforcement &middot; Live web search + source verification &middot; Telegram bot integration</p>
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', marginTop: '1rem', opacity: 0.7 }}>
                 model-council.niranexus.com &rarr;
               </p>
@@ -228,6 +228,50 @@ export default function Home() {
       <Divider />
 
       {/* ═══════════════════════════════════════════════════════════
+          TELEGRAM INTEGRATION
+          ═══════════════════════════════════════════════════════════ */}
+      <RevealSection>
+        <section style={{ padding: '3rem 2rem', maxWidth: 700, margin: '0 auto', textAlign: 'center' }} aria-label="Telegram integration">
+          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.4rem', color: '#ffffff', marginBottom: '0.5rem' }}>
+            Deliberate from Telegram
+          </h2>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.85rem', color: '#64748b', marginBottom: '2rem', maxWidth: 520, margin: '0 auto 2rem', lineHeight: 1.5 }}>
+            The Model Council is available as a Telegram bot. Deliberate without opening a browser — send a question, receive a verdict.
+          </p>
+          <div style={{ padding: '1.5rem', backgroundColor: 'rgba(10, 14, 26, 0.4)', borderRadius: 12, border: '1px solid rgba(0, 235, 212, 0.1)', maxWidth: 480, margin: '0 auto', textAlign: 'left' }}>
+            <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#00ebd4', marginBottom: '1rem' }}>
+              @NiraNexus_ModelCouncilBot
+            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#94a3b8' }}>
+              <div><code style={{ color: '#00ebd4', background: 'none' }}>/deliberate &lt;question&gt;</code> — Run a Council deliberation</div>
+              <div><code style={{ color: '#00ebd4', background: 'none' }}>/status</code> — Check your quota</div>
+              <div><code style={{ color: '#00ebd4', background: 'none' }}>/link &lt;code&gt;</code> — Link your account</div>
+            </div>
+            <a
+              href="https://model-council.niranexus.com/telegram"
+              style={{
+                display: 'inline-block',
+                marginTop: '1.25rem',
+                padding: '0.5rem 1.5rem',
+                color: '#00ebd4',
+                fontFamily: 'var(--font-mono)',
+                fontSize: '0.7rem',
+                border: '1px solid rgba(0, 235, 212, 0.2)',
+                borderRadius: 8,
+                textDecoration: 'none',
+                outline: 'none',
+              }}
+              className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-1 focus-visible:ring-offset-[#05070f]"
+            >
+              Set up Telegram →
+            </a>
+          </div>
+        </section>
+      </RevealSection>
+
+      <Divider />
+
+      {/* ═══════════════════════════════════════════════════════════
           ZONE 4 — GOVERNANCE
           ═══════════════════════════════════════════════════════════ */}
       <RevealSection>
@@ -238,9 +282,11 @@ export default function Home() {
           </p>
           <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Badge label="Framework" value="v3.0-lite" detail="8-phase governance" />
-            <Badge label="Pre-Code Gate" value="14 Checks" detail="Mechanical enforcement" />
+            <Badge label="Pre-Code Gate" value="15 Checks" detail="Mechanical enforcement" />
             <Badge label="RLS Policies" value="Enforced" detail="Row-Level Security" />
             <Badge label="Authentication" value="OAuth 2.0" detail="Google + JWT" />
+            <Badge label="Export" value="PDF/MD/JSON" detail="Signed provenance" />
+            <Badge label="Telegram" value="@Bot" detail="Deliberate from chat" />
           </div>
         </footer>
       </RevealSection>
