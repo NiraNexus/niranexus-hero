@@ -228,50 +228,6 @@ export default function Home() {
       <Divider />
 
       {/* ═══════════════════════════════════════════════════════════
-          TELEGRAM INTEGRATION
-          ═══════════════════════════════════════════════════════════ */}
-      <RevealSection>
-        <section style={{ padding: '3rem 2rem', maxWidth: 700, margin: '0 auto', textAlign: 'center' }} aria-label="Telegram integration">
-          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.4rem', color: '#ffffff', marginBottom: '0.5rem' }}>
-            Deliberate from Telegram
-          </h2>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.85rem', color: '#64748b', marginBottom: '2rem', maxWidth: 520, margin: '0 auto 2rem', lineHeight: 1.5 }}>
-            The Model Council is available as a Telegram bot. Deliberate without opening a browser — send a question, receive a verdict.
-          </p>
-          <div style={{ padding: '1.5rem', backgroundColor: 'rgba(10, 14, 26, 0.4)', borderRadius: 12, border: '1px solid rgba(0, 235, 212, 0.1)', maxWidth: 480, margin: '0 auto', textAlign: 'left' }}>
-            <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#00ebd4', marginBottom: '1rem' }}>
-              @NiraNexus_ModelCouncilBot
-            </p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#94a3b8' }}>
-              <div><code style={{ color: '#00ebd4', background: 'none' }}>/deliberate &lt;question&gt;</code> — Run a Council deliberation</div>
-              <div><code style={{ color: '#00ebd4', background: 'none' }}>/status</code> — Check your quota</div>
-              <div><code style={{ color: '#00ebd4', background: 'none' }}>/link &lt;code&gt;</code> — Link your account</div>
-            </div>
-            <a
-              href="https://model-council.niranexus.com/telegram"
-              style={{
-                display: 'inline-block',
-                marginTop: '1.25rem',
-                padding: '0.5rem 1.5rem',
-                color: '#00ebd4',
-                fontFamily: 'var(--font-mono)',
-                fontSize: '0.7rem',
-                border: '1px solid rgba(0, 235, 212, 0.2)',
-                borderRadius: 8,
-                textDecoration: 'none',
-                outline: 'none',
-              }}
-              className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-1 focus-visible:ring-offset-[#05070f]"
-            >
-              Set up Telegram →
-            </a>
-          </div>
-        </section>
-      </RevealSection>
-
-      <Divider />
-
-      {/* ═══════════════════════════════════════════════════════════
           ZONE 4 — GOVERNANCE
           ═══════════════════════════════════════════════════════════ */}
       <RevealSection>

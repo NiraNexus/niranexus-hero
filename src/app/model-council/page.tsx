@@ -190,24 +190,6 @@ export default function ModelCouncilPage() {
 
       <Divider />
 
-      {/* ═══ SECTION 4 — FOUNDER'S LOGIC ═══ */}
-      <section style={{ padding: '3rem 2rem', maxWidth: 700, margin: '0 auto', textAlign: 'center' }}>
-        <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '1.5rem' }}>
-          The Founder&apos;s Logic
-        </h2>
-        <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.95rem', color: '#ffffff', lineHeight: 1.8, maxWidth: 600, margin: '0 auto' }}>
-          NiraNexus-OS was born from the conviction that AI shouldn&apos;t just generate text &mdash; it should deliberate like an expert.
-          This Council is the implementation of that conviction. By subjecting frontier models to adversarial cross-examination before
-          committing a verdict to our hardened Supabase backend, we enforce mechanical compliance at every layer.
-          Agentic infrastructure, not a wrapper.
-        </p>
-        <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '1.5rem', opacity: 0.6 }}>
-          Founded by Rakesh Maheswaran. Combining enterprise consulting rigour with modern systems engineering.
-        </p>
-      </section>
-
-      <Divider />
-
       {/* ═══ GOVERNANCE COCKPIT ═══ */}
       <section style={{ padding: '3rem 2rem', maxWidth: 700, margin: '0 auto' }}>
         <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '2rem', textAlign: 'center' }}>
@@ -278,6 +260,24 @@ export default function ModelCouncilPage() {
             &ldquo;Does a council of AI models produce more reliable decisions than a single frontier model?&rdquo; — A real Council deliberation, publicly visible. Same infrastructure. Same models. Same process.
           </p>
         </div>
+      </section>
+
+      <Divider />
+
+      {/* ═══ FOUNDER'S LOGIC ═══ */}
+      <section style={{ padding: '3rem 2rem', maxWidth: 700, margin: '0 auto', textAlign: 'center' }}>
+        <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '1.5rem' }}>
+          The Founder&apos;s Logic
+        </h2>
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.95rem', color: '#ffffff', lineHeight: 1.8, maxWidth: 600, margin: '0 auto' }}>
+          NiraNexus-OS was born from the conviction that AI shouldn&apos;t just generate text &mdash; it should deliberate like an expert.
+          This Council is the implementation of that conviction. By subjecting frontier models to adversarial cross-examination before
+          committing a verdict to our hardened Supabase backend, we enforce mechanical compliance at every layer.
+          Agentic infrastructure, not a wrapper.
+        </p>
+        <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '1.5rem', opacity: 0.6 }}>
+          Founded by Rakesh Maheswaran. Combining enterprise consulting rigour with modern systems engineering.
+        </p>
       </section>
 
       <Divider />
