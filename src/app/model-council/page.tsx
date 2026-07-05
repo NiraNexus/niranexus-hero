@@ -136,6 +136,38 @@ export default function ModelCouncilPage() {
 
       <Divider />
 
+      {/* ═══ EXPORT PIPELINE ═══ */}
+      <section style={{ padding: '3rem 2rem', maxWidth: 700, margin: '0 auto' }}>
+        <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '2rem', textAlign: 'center' }}>
+          Export Pipeline
+        </h2>
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.7, textAlign: 'center', maxWidth: 560, margin: '0 auto 2rem' }}>
+          Every deliberation can be exported in three formats. All files carry a NiraNexus provenance signature — the deliberation record is self-documenting and portable.
+        </p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1rem' }}>
+          <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
+            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>PDF</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+              Print-optimized. Structured layout with NiraNexus signature footer. WCAG-compliant contrast.
+            </p>
+          </div>
+          <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
+            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Markdown</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+              Structured document with provenance footer. Compatible with any markdown renderer or text editor.
+            </p>
+          </div>
+          <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
+            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>JSON</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+              Machine-readable. Includes <code style={{ color: '#00ebd4', background: 'none' }}>_source</code> provenance field. Ready for programmatic consumption.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <Divider />
+
       {/* ═══ SECTION 3 — LIVE PROOF ═══ */}
       <section style={{ padding: '3rem 2rem', maxWidth: 900, margin: '0 auto' }}>
         <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '2rem', textAlign: 'center' }}>
@@ -172,6 +204,80 @@ export default function ModelCouncilPage() {
         <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '1.5rem', opacity: 0.6 }}>
           Founded by Rakesh Maheswaran. Combining enterprise consulting rigour with modern systems engineering.
         </p>
+      </section>
+
+      <Divider />
+
+      {/* ═══ GOVERNANCE COCKPIT ═══ */}
+      <section style={{ padding: '3rem 2rem', maxWidth: 700, margin: '0 auto' }}>
+        <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '2rem', textAlign: 'center' }}>
+          Governance Cockpit
+        </h2>
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.7, textAlign: 'center', maxWidth: 560, margin: '0 auto 2rem' }}>
+          Infrastructure-grade operational controls. The governance cockpit provides real-time observability, emergency intervention, and audit capabilities — not an afterthought, a first-class system layer.
+        </p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1rem' }}>
+          <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
+            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#FF6B6B', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Kill Switch</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+              Emergency stop for all active deliberations. Layered at API and engine yield points. Founder-only access.
+            </p>
+          </div>
+          <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
+            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Quota Monitor</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+              Color-coded thresholds. Real-time usage tracking. Circuit breaker enforcement at pre-flight and round boundaries.
+            </p>
+          </div>
+          <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
+            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#60A5FA', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Model Audit</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+              Daily automated audit of all model IDs against live OpenRouter. Dead models flagged before they cause silent failures.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <Divider />
+
+      {/* ═══ TELEGRAM INTEGRATION ═══ */}
+      <section style={{ padding: '3rem 2rem', maxWidth: 700, margin: '0 auto' }}>
+        <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '2rem', textAlign: 'center' }}>
+          Telegram Integration
+        </h2>
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.7, textAlign: 'center', maxWidth: 560, margin: '0 auto 2rem' }}>
+          The Council is accessible as a Telegram bot. Deliberate from any device without opening a browser. Same models, same quota enforcement, same governance — a new entry point, not a separate product.
+        </p>
+        <div style={{ padding: '1.5rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)', maxWidth: 480, margin: '0 auto' }}>
+          <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#00ebd4', marginBottom: '1rem' }}>
+            @NiraNexus_ModelCouncilBot
+          </p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#94a3b8' }}>
+            <div><code style={{ color: '#00ebd4', background: 'none' }}>/deliberate &lt;question&gt;</code> — Run a Council deliberation</div>
+            <div><code style={{ color: '#00ebd4', background: 'none' }}>/status</code> — Check quota and model availability</div>
+            <div><code style={{ color: '#00ebd4', background: 'none' }}>/link &lt;code&gt;</code> — Link Telegram account to web identity</div>
+          </div>
+        </div>
+      </section>
+
+      <Divider />
+
+      {/* ═══ PUBLIC EVIDENCE LAYER ═══ */}
+      <section style={{ padding: '3rem 2rem', maxWidth: 700, margin: '0 auto' }}>
+        <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '2rem', textAlign: 'center' }}>
+          Public Evidence Layer
+        </h2>
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.7, textAlign: 'center', maxWidth: 560, margin: '0 auto 2rem' }}>
+          Every deliberation produces a shareable public record. No authentication required to view. Source attribution, confidence scores, dissent tracking, and evidence basis — all publicly auditable.
+        </p>
+        <div style={{ padding: '1.5rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)', maxWidth: 480, margin: '0 auto', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#94a3b8', marginBottom: '0.75rem' }}>
+            Example: model-council.niranexus.com/debate/28b97049
+          </p>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+            &ldquo;Does a council of AI models produce more reliable decisions than a single frontier model?&rdquo; — A real Council deliberation, publicly visible. Same infrastructure. Same models. Same process.
+          </p>
+        </div>
       </section>
 
       <Divider />
