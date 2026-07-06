@@ -253,13 +253,13 @@ export default function ModelCouncilPage() {
           Every deliberation produces a shareable public record. No authentication required to view. Source attribution, confidence scores, dissent tracking, and evidence basis — all publicly auditable.
         </p>
         <div style={{ padding: '1.5rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)', maxWidth: 480, margin: '0 auto', textAlign: 'center' }}>
-          <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#94a3b8', marginBottom: '0.75rem' }}>
-            Example: model-council.niranexus.com/debate/28b97049
-          </p>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
-            &ldquo;Does a council of AI models produce more reliable decisions than a single frontier model?&rdquo; — A real Council deliberation, publicly visible. Same infrastructure. Same models. Same process.
-          </p>
-        </div>
+                  <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#94a3b8', marginBottom: '0.75rem' }}>
+                    Example: model-council.niranexus.com/debate/[id]
+                  </p>
+                  <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+                    Every Council deliberation produces a shareable public URL.
+                  </p>
+                </div>
       </section>
 
       <Divider />
