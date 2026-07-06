@@ -72,7 +72,7 @@ export default function RootLayout({
             <a href="https://niranexus.com" style={{ color: '#00EBD4', textDecoration: 'none' }} className="hover:underline focus-visible:ring-2 focus-visible:ring-[#00EBD4] focus-visible:outline-none rounded px-0.5">NiraNexus-OS</a> &copy; {new Date().getFullYear()} {'—'} Founded by Rakesh Maheswaran. Agentic infrastructure, not a wrapper.
           </p>
           <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '0.5rem' }}>
-            NiraNexus Ltd — Registered in England and Wales &nbsp;|&nbsp; <a href="/privacy" style={{ color: '#64748b' }}>Privacy</a> &nbsp;|&nbsp; <a href="/terms" style={{ color: '#64748b' }}>Terms</a>
+            NiraNexus Ltd — Registered in England and Wales &nbsp;|&nbsp; <a href="https://model-council.niranexus.com/faq" style={{ color: '#64748b' }}>FAQ</a> &nbsp;|&nbsp; <a href="/privacy" style={{ color: '#64748b' }}>Privacy</a> &nbsp;|&nbsp; <a href="/terms" style={{ color: '#64748b' }}>Terms</a>
           </p>
         </footer>
       </body>
