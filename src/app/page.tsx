@@ -87,79 +87,79 @@ export default function Home() {
         </div>
 
         {/* CTA — Control Plane Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.25rem', marginTop: '2.5rem', maxWidth: 780, width: '100%' }} role="navigation" aria-label="NiraNexus control plane">
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.25rem', marginTop: '2.5rem', maxWidth: 780, width: '100%' }} role="navigation" aria-label="NiraNexus control plane">
 
-          {/* Veritas Tile */}
-          <a
-            href="/veritas"
-            style={{
-              display: 'block', textDecoration: 'none', color: 'inherit',
-              padding: '1.75rem 1.5rem',
-              backgroundColor: 'rgba(10, 14, 26, 0.5)',
-              borderRadius: 14,
-              border: '1px solid rgba(0, 235, 212, 0.14)',
-              textAlign: 'left',
-              transition: 'border-color 0.2s, background-color 0.2s',
-              outline: 'none',
-            }}
-            className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f]"
-            aria-label="Veritas — Professional Deliberation Engine, building"
-          >
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
-              <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.15rem', color: '#ffffff', margin: 0 }}>Veritas</h2>
-              <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#ffc107', backgroundColor: 'rgba(255, 193, 7, 0.12)', padding: '0.2rem 0.7rem', borderRadius: 10, textTransform: 'uppercase', letterSpacing: '1px' }} role="status">BUILDING</span>
-            </div>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
-              The Assurance Interface. Professional deliberation engine precision-tuned for legal, accounting, and consulting. Adversarial verification with provenance-signed artifacts.
-            </p>
-          </a>
+                  {/* Model Council Tile */}
+                  <a
+                    href="https://model-council.niranexus.com"
+                    style={{
+                      display: 'block', textDecoration: 'none', color: 'inherit',
+                      padding: '1.75rem 1.5rem',
+                      backgroundColor: 'rgba(10, 14, 26, 0.5)',
+                      borderRadius: 14,
+                      border: '1px solid rgba(0, 235, 212, 0.14)',
+                      textAlign: 'left',
+                      transition: 'border-color 0.2s, background-color 0.2s',
+                      outline: 'none',
+                    }}
+                    className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f]"
+                    aria-label="Model Council — Adversarial Engine, live"
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
+                      <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.15rem', color: '#ffffff', margin: 0 }}>Model Council</h2>
+                      <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#22c55e', backgroundColor: 'rgba(34, 197, 94, 0.12)', padding: '0.2rem 0.7rem', borderRadius: 10, textTransform: 'uppercase', letterSpacing: '1px' }} role="status">LIVE</span>
+                    </div>
+                    <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+                      The Adversarial Engine. Multi-model deliberation pipeline with auditable Evidence Basis. Opening Statements → Cross-Examination → Rebuttal → Synthesis.
+                    </p>
+                  </a>
 
-          {/* Model Council Tile */}
-          <a
-            href="https://model-council.niranexus.com"
-            style={{
-              display: 'block', textDecoration: 'none', color: 'inherit',
-              padding: '1.75rem 1.5rem',
-              backgroundColor: 'rgba(10, 14, 26, 0.5)',
-              borderRadius: 14,
-              border: '1px solid rgba(0, 235, 212, 0.14)',
-              textAlign: 'left',
-              transition: 'border-color 0.2s, background-color 0.2s',
-              outline: 'none',
-            }}
-            className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f]"
-            aria-label="Model Council — Adversarial Engine, live"
-          >
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
-              <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.15rem', color: '#ffffff', margin: 0 }}>Model Council</h2>
-              <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#22c55e', backgroundColor: 'rgba(34, 197, 94, 0.12)', padding: '0.2rem 0.7rem', borderRadius: 10, textTransform: 'uppercase', letterSpacing: '1px' }} role="status">LIVE</span>
-            </div>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
-              The Adversarial Engine. Multi-model deliberation pipeline with auditable Evidence Basis. Opening Statements → Cross-Examination → Rebuttal → Synthesis.
-            </p>
-          </a>
+                  {/* Veritas Tile */}
+                  <a
+                    href="/veritas"
+                    style={{
+                      display: 'block', textDecoration: 'none', color: 'inherit',
+                      padding: '1.75rem 1.5rem',
+                      backgroundColor: 'rgba(10, 14, 26, 0.5)',
+                      borderRadius: 14,
+                      border: '1px solid rgba(0, 235, 212, 0.14)',
+                      textAlign: 'left',
+                      transition: 'border-color 0.2s, background-color 0.2s',
+                      outline: 'none',
+                    }}
+                    className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f]"
+                    aria-label="Veritas — Professional Deliberation Engine, building"
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
+                      <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.15rem', color: '#ffffff', margin: 0 }}>Veritas</h2>
+                      <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#ffc107', backgroundColor: 'rgba(255, 193, 7, 0.12)', padding: '0.2rem 0.7rem', borderRadius: 10, textTransform: 'uppercase', letterSpacing: '1px' }} role="status">BUILDING</span>
+                    </div>
+                    <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+                      The Assurance Interface. Professional deliberation engine precision-tuned for legal, accounting, and consulting. Adversarial verification with provenance-signed artifacts.
+                    </p>
+                  </a>
 
-          {/* Record Tile — Coming Soon */}
-          <div
-            style={{
-              padding: '1.75rem 1.5rem',
-              backgroundColor: 'rgba(10, 14, 26, 0.25)',
-              borderRadius: 14,
-              border: '1px dashed rgba(0, 235, 212, 0.06)',
-              opacity: 0.65,
-              textAlign: 'left',
-            }}
-            aria-label="NiraNexus Record — coming soon"
-          >
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
-              <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.15rem', color: '#ffffff', margin: 0 }}>Record</h2>
-              <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#64748b', backgroundColor: 'rgba(100, 116, 139, 0.12)', padding: '0.2rem 0.7rem', borderRadius: 10, textTransform: 'uppercase', letterSpacing: '1px' }}>COMING SOON</span>
-            </div>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
-              Cross-system provenance and audit trail. Every deliberation artifact — from Model Council or Veritas — registered, indexed, and permanently verifiable.
-            </p>
-          </div>
-        </div>
+                  {/* Record Tile — Coming Soon */}
+                  <div
+                    style={{
+                      padding: '1.75rem 1.5rem',
+                      backgroundColor: 'rgba(10, 14, 26, 0.25)',
+                      borderRadius: 14,
+                      border: '1px dashed rgba(0, 235, 212, 0.06)',
+                      opacity: 0.65,
+                      textAlign: 'left',
+                    }}
+                    aria-label="NiraNexus Record — coming soon"
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
+                      <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.15rem', color: '#ffffff', margin: 0 }}>Record</h2>
+                      <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#64748b', backgroundColor: 'rgba(100, 116, 139, 0.12)', padding: '0.2rem 0.7rem', borderRadius: 10, textTransform: 'uppercase', letterSpacing: '1px' }}>COMING SOON</span>
+                    </div>
+                    <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+                      Cross-system provenance and audit trail. Every deliberation artifact — from Model Council or Veritas — registered, indexed, and permanently verifiable.
+                    </p>
+                  </div>
+                </div>
 
         {/* Scroll cue */}
         <button
@@ -232,7 +232,7 @@ export default function Home() {
           ZONE 3 — SYSTEM COMPONENTS
           ═══════════════════════════════════════════════════════════ */}
       <RevealSection>
-        <section style={{ padding: '4rem 2rem', maxWidth: 900, margin: '0 auto' }} aria-label="System components">
+        <section style={{ padding: '4rem 2rem', maxWidth: 900, margin: '0 auto' }} aria-label="System components" id="system-components">
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.4rem', color: '#ffffff', textAlign: 'center', marginBottom: '2.5rem' }}>
             System Components
           </h2>
@@ -255,10 +255,15 @@ export default function Home() {
               </p>
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '0.75rem', lineHeight: 1.6 }}>Mid-debate checkpoints &middot; Quorum enforcement &middot; Live web search + source verification &middot; Telegram bot integration</p>
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', marginTop: '1rem', opacity: 0.7 }}>
-                model-council.niranexus.com &rarr;
-              </p>
-            </div>
-          </a>
+                              model-council.niranexus.com &rarr;
+                            </p>
+                            <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', marginTop: '0.5rem', opacity: 0.7 }}>
+                              <span onClick={(e) => { e.preventDefault(); e.stopPropagation(); router.push('/model-council'); }} style={{ color: '#00ebd4', cursor: 'pointer', outline: 'none' }} className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-1 focus-visible:ring-offset-[#05070f] rounded" tabIndex={0} onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); e.stopPropagation(); router.push('/model-council'); } }} role="link">
+                                View Engineering Specification &rarr;
+                              </span>
+                            </p>
+                          </div>
+                        </a>
 
             {/* Veritas */}
             <a href="/veritas" style={{ display: 'block', textDecoration: 'none', color: 'inherit', minWidth: 0, outline: 'none' }} className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f] rounded-xl" aria-label="Veritas — The Assurance Interface, building">

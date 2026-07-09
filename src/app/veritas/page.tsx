@@ -40,13 +40,13 @@ export default function VeritasPage() {
         </h2>
         <div style={{ padding: '1.5rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.95rem', color: '#ffffff', lineHeight: 1.8, textAlign: 'center', margin: 0 }}>
-            Veritas is <strong style={{ color: '#00ebd4' }}>the NiraNexus Engine, precision-tuned for professional expertise</strong>.
+            Veritas is <strong style={{ color: '#00ebd4' }}>the NiraNexus Engine</strong>, precision-tuned for professional expertise.
           </p>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.85rem', color: '#cbd5e1', lineHeight: 1.7, textAlign: 'center', marginTop: '1rem' }}>
             It is not a separate AI. It is the same adversarial deliberation pipeline that powers Model Council — deployed with domain-specific personas, regulatory frameworks, and professional-grade output standards for legal, accounting, and consulting professionals.
           </p>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.85rem', color: '#cbd5e1', lineHeight: 1.7, textAlign: 'center', marginTop: '0.75rem' }}>
-            <strong style={{ color: '#00ebd4' }}>Veritas does not generate text; it verifies intent.</strong>
+            <strong style={{ color: '#ffffff' }}>Veritas does not generate text; it verifies intent.</strong>
           </p>
         </div>
       </section>
@@ -109,7 +109,7 @@ export default function VeritasPage() {
           Evidence Basis &amp; Provenance Proof
         </h2>
         <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.7, textAlign: 'center', maxWidth: 560, margin: '0 auto 2rem' }}>
-          Every Veritas deliberation produces an auditable Evidence Basis. Claims are labeled against retrieved evidence — not asserted from parametric memory. The provenance trail is permanently registered in the NiraNexus Record, providing a cross-system, immutable audit log.
+          Every Veritas deliberation produces an auditable Evidence Basis. Claims are labeled against retrieved evidence — not asserted from parametric memory. The provenance trail is permanently registered in the <a href="/#system-components" style={{ color: '#00ebd4', textDecoration: 'none', outline: 'none' }} className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f] rounded">NiraNexus Record</a>, providing a cross-system, immutable audit log.
         </p>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
@@ -188,9 +188,6 @@ export default function VeritasPage() {
           <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.85rem', color: '#cbd5e1', lineHeight: 1.7, margin: 0 }}>
             Veritas is the second component of NiraNexus-OS. Built on the same engine, pipeline, and governance as Model Council. No new infrastructure required — domain-specific personas, professional output standards, and a dedicated interface.
           </p>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.85rem', color: '#cbd5e1', lineHeight: 1.7, marginTop: '0.75rem' }}>
-            Estimated build: 1-2 days. Same pattern as Model Council: deliberation engine + professional personas + landing page.
-          </p>
         </div>
       </section>
 
@@ -206,7 +203,7 @@ export default function VeritasPage() {
             [SYSTEM_ACCESS_NOTICE]
           </p>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.78rem', color: '#94a3b8', margin: '0.5rem 0 0', lineHeight: 1.5 }}>
-            Veritas will require authenticated session handling via Google OAuth to maintain professional audit trails and data integrity.
+            Veritas will require authenticated session handling via Google OAuth to maintain SOC 2-ready compliance data integrity and professional audit trails.
           </p>
         </div>
         <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#64748b', marginTop: '1.5rem' }}>
