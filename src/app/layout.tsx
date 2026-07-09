@@ -21,7 +21,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   title: "NiraNexus | Operating System for Auditable Deliberation",
-  description: "NiraNexus-OS is hardened infrastructure for adversarial multi-model deliberation. Model Council executes the pipeline. Veritas certifies professional-grade artifacts. The Record provides cross-product provenance. Same pipeline, same governance.",
+  description: "NiraNexus-OS is hardened infrastructure for adversarial multi-model deliberation. Model Council executes the pipeline. Veritas certifies professional-grade artifacts. The Record provides cross-system provenance. Same pipeline, same governance.",
   icons: {
     icon: "/favicon.svg",
     apple: "/logo.svg",

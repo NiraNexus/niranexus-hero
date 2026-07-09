@@ -109,7 +109,7 @@ export default function VeritasPage() {
           Evidence Basis &amp; Provenance Proof
         </h2>
         <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.7, textAlign: 'center', maxWidth: 560, margin: '0 auto 2rem' }}>
-          Every Veritas deliberation produces an auditable Evidence Basis. Claims are labeled against retrieved evidence — not asserted from parametric memory. The provenance trail is permanently registered in the NiraNexus Record, providing a cross-product, immutable audit log.
+          Every Veritas deliberation produces an auditable Evidence Basis. Claims are labeled against retrieved evidence — not asserted from parametric memory. The provenance trail is permanently registered in the NiraNexus Record, providing a cross-system, immutable audit log.
         </p>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
@@ -136,7 +136,7 @@ export default function VeritasPage() {
         <div style={{ marginTop: '2rem', padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.2)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.06)' }}>
           <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>NiraNexus Record Integration</h3>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.7, margin: 0 }}>
-            Every Veritas deliberation is registered in the <strong style={{ color: '#00ebd4' }}>NiraNexus Record</strong> — the cross-product provenance ledger. Each artifact receives a unique verification hash. Regulators, auditors, and professional standards bodies can verify that a deliberation occurred, which models participated, what evidence was retrieved, and how the final verdict was reached. The Record transforms AI-assisted professional judgment from a black box into a defensible system of record.
+            Every Veritas deliberation is registered in the <strong style={{ color: '#00ebd4' }}>NiraNexus Record</strong> — the cross-system provenance ledger. Each artifact receives a unique verification hash. Regulators, auditors, and professional standards bodies can verify that a deliberation occurred, which models participated, what evidence was retrieved, and how the final verdict was reached. The Record transforms AI-assisted professional judgment from a black box into a defensible system of record.
           </p>
         </div>
       </section>

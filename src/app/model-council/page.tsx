@@ -228,7 +228,7 @@ export default function ModelCouncilPage() {
           Telegram Integration
         </h2>
         <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.7, textAlign: 'center', maxWidth: 560, margin: '0 auto 2rem' }}>
-          The Council is accessible as a Telegram bot. Deliberate from any device without opening a browser. Same models, same quota enforcement, same governance — a new entry point, not a separate product.
+          The Council is accessible as a Telegram bot. Deliberate from any device without opening a browser. Same models, same quota enforcement, same governance — a new entry point, not a separate component.
         </p>
         <div style={{ padding: '1.5rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)', maxWidth: 480, margin: '0 auto' }}>
           <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#00ebd4', marginBottom: '1rem' }}>

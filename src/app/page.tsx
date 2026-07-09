@@ -47,7 +47,7 @@ export default function Home() {
       {/* ═══════════════════════════════════════════════════════════
           ZONE 1 — THE FOUNDER + CONTROL PLANE
           ═══════════════════════════════════════════════════════════ */}
-      <section style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '75vh', padding: '3rem 2rem', textAlign: 'center' }} aria-label="Founder introduction and product control plane">
+      <section style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '75vh', padding: '3rem 2rem', textAlign: 'center' }} aria-label="Founder introduction and NiraNexus control plane">
 
         <img src="/logo.svg" alt="" style={{ width: 72, height: 72, marginBottom: '1rem' }} aria-hidden="true" />
 
@@ -60,7 +60,7 @@ export default function Home() {
         </p>
 
         <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', maxWidth: 620, marginTop: '1rem', lineHeight: 1.7 }}>
-          NiraNexus-OS is an operating system for auditable deliberation. Multi-model adversarial cross-examination. Provenance-signed verdicts. Same pipeline, same governance, across every product.
+          NiraNexus-OS is an operating system for auditable deliberation. Multi-model adversarial cross-examination. Provenance-signed verdicts. Same pipeline, same governance, across every component.
         </p>
 
         {/* Live Metrics */}
@@ -86,8 +86,8 @@ export default function Home() {
           )}
         </div>
 
-        {/* CTA — Product Control Plane Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.25rem', marginTop: '2.5rem', maxWidth: 780, width: '100%' }} role="navigation" aria-label="NiraNexus product control plane">
+        {/* CTA — Control Plane Grid */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.25rem', marginTop: '2.5rem', maxWidth: 780, width: '100%' }} role="navigation" aria-label="NiraNexus control plane">
 
           {/* Veritas Tile */}
           <a
@@ -156,7 +156,7 @@ export default function Home() {
               <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#64748b', backgroundColor: 'rgba(100, 116, 139, 0.12)', padding: '0.2rem 0.7rem', borderRadius: 10, textTransform: 'uppercase', letterSpacing: '1px' }}>COMING SOON</span>
             </div>
             <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
-              Cross-product provenance and audit trail. Every deliberation artifact — from Model Council or Veritas — registered, indexed, and permanently verifiable.
+              Cross-system provenance and audit trail. Every deliberation artifact — from Model Council or Veritas — registered, indexed, and permanently verifiable.
             </p>
           </div>
         </div>
@@ -183,11 +183,11 @@ export default function Home() {
             The Architecture of Trust
           </h2>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#64748b', textAlign: 'center', maxWidth: 520, margin: '0 auto 3rem', lineHeight: 1.6 }}>
-            Deliberation is the antidote to AI hallucination. Every system output is cross-examined by multiple frontier models before it reaches the user — whether through Model Council, Veritas, or any NiraNexus product.
+            Deliberation is the antidote to AI hallucination. Every system output is cross-examined by multiple frontier models before it reaches the user — whether through Model Council, Veritas, or any NiraNexus component.
           </p>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5rem' }}>
-            <Principle title="Deliberation over Generation" body="Four frontier models debate before answering. Three rounds of Opening Statements, Cross-Examination, and Rebuttal. One synthesized verdict. No single-model hallucination survives cross-examination. Every NiraNexus product inherits this pipeline." />
+            <Principle title="Deliberation over Generation" body="Four frontier models debate before answering. Three rounds of Opening Statements, Cross-Examination, and Rebuttal. One synthesized verdict. No single-model hallucination survives cross-examination. Every NiraNexus component inherits this pipeline." />
             <Principle title="Traceable Deliberation" body="Every system output produces a session-scoped, exportable artifact stored in a hardened Supabase backend. The adversarial process is preserved — your decision-path is traceable, not disposable." />
             <Principle title="Hardened over Open" body="Pre-code gates enforce mechanical compliance before any line ships. Row-Level Security governs every database query. OAuth 2.0 with JWT verification. AI infrastructure without governance is a liability." />
             <Principle title="Evidence Basis" body="Every system output includes an auditable Evidence Basis. Claims are labeled VERIFIED (retrieved evidence supports the claim), DISPUTED (conflicting evidence detected), or UNVERIFIED (insufficient data). The system surfaces its own limitations — not fabricated confidence." />
@@ -284,9 +284,9 @@ export default function Home() {
                 <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', color: '#ffffff', margin: 0 }}>Record</h3>
                 <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#64748b', backgroundColor: 'rgba(100, 116, 139, 0.1)', padding: '0.2rem 0.7rem', borderRadius: 10, textTransform: 'uppercase', letterSpacing: '1px' }}>COMING SOON</span>
               </div>
-              <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.75rem' }}>Cross-Product Provenance</p>
+              <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.75rem' }}>Cross-System Provenance</p>
               <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
-                Every deliberation artifact — from Model Council or Veritas — registered, indexed, and permanently verifiable. The Record is the infrastructure backbone: a single source of truth for cross-product audit trails and compliance evidence.
+                Every deliberation artifact — from Model Council or Veritas — registered, indexed, and permanently verifiable. The Record is the infrastructure backbone: a single source of truth for cross-system audit trails and compliance evidence.
               </p>
             </div>
           </div>
@@ -302,7 +302,7 @@ export default function Home() {
         <footer style={{ padding: '4rem 2rem', textAlign: 'center', maxWidth: 700, margin: '0 auto' }} aria-label="System governance and founder">
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.4rem', color: '#ffffff', marginBottom: '0.5rem' }}>The Hardening</h2>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: '#64748b', marginBottom: '1.5rem', maxWidth: 520, margin: '0 auto 1.5rem', lineHeight: 1.5 }}>
-            Governance is not an afterthought. Every layer of NiraNexus-OS enforces its own integrity. Every product — Model Council, Veritas, and beyond — inherits the same hardened infrastructure. Same pipeline, same governance.
+            Governance is not an afterthought. Every layer of NiraNexus-OS enforces its own integrity. Every component — Model Council, Veritas, and beyond — inherits the same hardened infrastructure. Same pipeline, same governance.
           </p>
           <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Badge label="Framework" value="v3.0-lite" detail="8-phase governance" />
