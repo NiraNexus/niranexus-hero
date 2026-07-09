@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Model Council: Deliberative AI Infrastructure | NiraNexus-OS | Hardened",
-  description: "Model Council is the deliberative engine of NiraNexus-OS. Frontier models cross-examine assumptions to produce verified, audited output. Governance-first infrastructure for mission-critical agentic workflows.",
+  title: "Model Council | NiraNexus-OS Adversarial Deliberation Engine",
+  description: "The adversarial engine of NiraNexus-OS. Multi-model cross-examination pipeline with auditable Evidence Basis and provenance-signed verdicts. Opening Statements → Cross-Examination → Rebuttal → Synthesis.",
   openGraph: {
-    title: "NiraNexus Model Council: Governance-First AI Deliberation",
-    description: "An engineering specification for the multi-model deliberation stack powering NiraNexus-OS.",
+    title: "Model Council | NiraNexus-OS Adversarial Deliberation Engine",
+    description: "The adversarial engine of NiraNexus-OS. Multi-model cross-examination with provenance-signed verdicts.",
     siteName: "NiraNexus",
     type: "website",
     images: [{ url: "https://niranexus.com/og-image.svg", width: 1200, height: 630 }],
@@ -15,12 +15,12 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "headline": "Model Council: Technical Deep Dive",
+  "headline": "Model Council: NiraNexus-OS Adversarial Deliberation Engine",
   "author": {
     "@type": "Person",
     "name": "Rakesh Maheswaran",
   },
-  "description": "An engineering specification for the deliberative infrastructure powering NiraNexus-OS.",
+  "description": "The adversarial engine of NiraNexus-OS. Multi-model cross-examination pipeline with auditable Evidence Basis and provenance-signed verdicts.",
   "isAccessibleForFree": false,
 };
 

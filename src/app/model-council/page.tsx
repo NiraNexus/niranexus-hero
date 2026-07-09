@@ -307,14 +307,9 @@ export default function ModelCouncilPage() {
           </p>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.78rem', color: '#94a3b8', margin: '0.5rem 0 0', lineHeight: 1.5 }}>
             Accessing the Council requires authenticated session handling via Google OAuth to maintain SOC 2-ready compliance data integrity and professional audit trails.
-                      </p>
-                    </div>
-                    <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#64748b', marginTop: '1.5rem' }}>
-                      <a href="https://model-council.niranexus.com/faq" style={{ color: '#64748b' }}>FAQ</a>
-                      &nbsp;|&nbsp; <a href="https://niranexus.com/privacy" style={{ color: '#64748b' }}>Privacy</a>
-                      &nbsp;|&nbsp; <a href="https://niranexus.com/terms" style={{ color: '#64748b' }}>Terms</a>
-                    </p>
-      </section>
+                                  </p>
+                                </div>
+                  </section>
 
       <ScrollToTop />
     </main>

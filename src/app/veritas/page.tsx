@@ -136,7 +136,7 @@ export default function VeritasPage() {
         <div style={{ marginTop: '2rem', padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.2)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.06)' }}>
           <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>NiraNexus Record Integration</h3>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.7, margin: 0 }}>
-            Every Veritas deliberation is registered in the <strong style={{ color: '#00ebd4' }}>NiraNexus Record</strong> — the cross-system provenance ledger. Each artifact receives a unique verification hash. Regulators, auditors, and professional standards bodies can verify that a deliberation occurred, which models participated, what evidence was retrieved, and how the final verdict was reached. The Record transforms AI-assisted professional judgment from a black box into a defensible system of record.
+            Every Veritas deliberation is registered in the <a href="/#system-components" style={{ color: '#00ebd4', textDecoration: 'none', outline: 'none' }} className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f] rounded">NiraNexus Record</a> — the cross-system provenance ledger. Each artifact receives a unique verification hash. Regulators, auditors, and professional standards bodies can verify that a deliberation occurred, which models participated, what evidence was retrieved, and how the final verdict was reached. The Record transforms AI-assisted professional judgment from a black box into a defensible system of record.
           </p>
         </div>
       </section>
@@ -206,12 +206,6 @@ export default function VeritasPage() {
             Veritas will require authenticated session handling via Google OAuth to maintain SOC 2-ready compliance data integrity and professional audit trails.
           </p>
         </div>
-        <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#64748b', marginTop: '1.5rem' }}>
-          <Link href="/" style={{ color: '#64748b', outline: 'none' }} className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f] rounded">NiraNexus Home</Link>
-          &nbsp;|&nbsp; <a href="https://model-council.niranexus.com" style={{ color: '#64748b', outline: 'none' }} className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f] rounded">Model Council</a>
-          &nbsp;|&nbsp; <a href="/privacy" style={{ color: '#64748b', outline: 'none' }} className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f] rounded">Privacy</a>
-          &nbsp;|&nbsp; <a href="/terms" style={{ color: '#64748b', outline: 'none' }} className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f] rounded">Terms</a>
-        </p>
       </section>
 
       <ScrollToTop />
