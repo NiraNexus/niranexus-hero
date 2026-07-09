@@ -20,14 +20,14 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NiraNexus | Agentic Infrastructure & Deliberative AI Governance",
-  description: "NiraNexus-OS is a governance-first agentic infrastructure. We replace speculative generation with adversarial deliberation to ensure verifiable, audited output for high-stakes operational workflows.",
+  title: "NiraNexus | Operating System for Auditable Deliberation",
+  description: "NiraNexus-OS is hardened infrastructure for adversarial multi-model deliberation. Model Council executes the pipeline. Veritas certifies professional-grade artifacts. The Record provides cross-product provenance. Same pipeline, same governance.",
   icons: {
     icon: "/favicon.svg",
     apple: "/logo.svg",
   },
   openGraph: {
-    title: "NiraNexus-OS | Deliberative Infrastructure for Agentic Workflows",
+    title: "NiraNexus-OS | Operating System for Auditable Deliberation",
     description: "Hardened agentic infrastructure powered by multi-model adversarial deliberation. Governance-first, not a wrapper.",
     siteName: "NiraNexus",
     type: "website",

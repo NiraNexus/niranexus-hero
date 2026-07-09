@@ -45,9 +45,9 @@ export default function Home() {
     <main style={{ backgroundColor: '#05070f', color: '#cbd5e1', minHeight: '100vh', fontFamily: 'var(--font-body)' }} aria-label="NiraNexus homepage">
 
       {/* ═══════════════════════════════════════════════════════════
-          ZONE 1 — THE FOUNDER
+          ZONE 1 — THE FOUNDER + CONTROL PLANE
           ═══════════════════════════════════════════════════════════ */}
-      <section style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '75vh', padding: '3rem 2rem', textAlign: 'center' }} aria-label="Founder introduction">
+      <section style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '75vh', padding: '3rem 2rem', textAlign: 'center' }} aria-label="Founder introduction and product control plane">
 
         <img src="/logo.svg" alt="" style={{ width: 72, height: 72, marginBottom: '1rem' }} aria-hidden="true" />
 
@@ -60,7 +60,7 @@ export default function Home() {
         </p>
 
         <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', maxWidth: 620, marginTop: '1rem', lineHeight: 1.7 }}>
-          NiraNexus-OS is governance-first infrastructure for auditable AI deliberation.
+          NiraNexus-OS is an operating system for auditable deliberation. Multi-model adversarial cross-examination. Provenance-signed verdicts. Same pipeline, same governance, across every product.
         </p>
 
         {/* Live Metrics */}
@@ -86,28 +86,80 @@ export default function Home() {
           )}
         </div>
 
-        {/* CTA */}
-        <a
-          href="https://model-council.niranexus.com"
-          style={{
-            display: 'inline-block',
-            marginTop: '2rem',
-            padding: '0.9rem 2.5rem',
-            backgroundColor: '#00ebd4',
-            color: '#05070f',
-            fontFamily: 'var(--font-display)',
-            fontSize: '1.1rem',
-            fontWeight: 700,
-            borderRadius: 50,
-            textDecoration: 'none',
-            boxShadow: '0 4px 20px rgba(0, 235, 212, 0.35)',
-            outline: 'none',
-          }}
-          className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f]"
-          aria-label="Continue to NiraNexus Model Council"
-        >
-          Continue to NiraNexus Model Council
-        </a>
+        {/* CTA — Product Control Plane Grid */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.25rem', marginTop: '2.5rem', maxWidth: 780, width: '100%' }} role="navigation" aria-label="NiraNexus product control plane">
+
+          {/* Veritas Tile */}
+          <a
+            href="/veritas"
+            style={{
+              display: 'block', textDecoration: 'none', color: 'inherit',
+              padding: '1.75rem 1.5rem',
+              backgroundColor: 'rgba(10, 14, 26, 0.5)',
+              borderRadius: 14,
+              border: '1px solid rgba(0, 235, 212, 0.14)',
+              textAlign: 'left',
+              transition: 'border-color 0.2s, background-color 0.2s',
+              outline: 'none',
+            }}
+            className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f]"
+            aria-label="Veritas — Professional Deliberation Engine, building"
+          >
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.15rem', color: '#ffffff', margin: 0 }}>Veritas</h2>
+              <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#ffc107', backgroundColor: 'rgba(255, 193, 7, 0.12)', padding: '0.2rem 0.7rem', borderRadius: 10, textTransform: 'uppercase', letterSpacing: '1px' }} role="status">BUILDING</span>
+            </div>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+              The Assurance Interface. Professional deliberation engine precision-tuned for legal, accounting, and consulting. Adversarial verification with provenance-signed artifacts.
+            </p>
+          </a>
+
+          {/* Model Council Tile */}
+          <a
+            href="https://model-council.niranexus.com"
+            style={{
+              display: 'block', textDecoration: 'none', color: 'inherit',
+              padding: '1.75rem 1.5rem',
+              backgroundColor: 'rgba(10, 14, 26, 0.5)',
+              borderRadius: 14,
+              border: '1px solid rgba(0, 235, 212, 0.14)',
+              textAlign: 'left',
+              transition: 'border-color 0.2s, background-color 0.2s',
+              outline: 'none',
+            }}
+            className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f]"
+            aria-label="Model Council — Adversarial Engine, live"
+          >
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.15rem', color: '#ffffff', margin: 0 }}>Model Council</h2>
+              <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#22c55e', backgroundColor: 'rgba(34, 197, 94, 0.12)', padding: '0.2rem 0.7rem', borderRadius: 10, textTransform: 'uppercase', letterSpacing: '1px' }} role="status">LIVE</span>
+            </div>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+              The Adversarial Engine. Multi-model deliberation pipeline with auditable Evidence Basis. Opening Statements → Cross-Examination → Rebuttal → Synthesis.
+            </p>
+          </a>
+
+          {/* Record Tile — Coming Soon */}
+          <div
+            style={{
+              padding: '1.75rem 1.5rem',
+              backgroundColor: 'rgba(10, 14, 26, 0.25)',
+              borderRadius: 14,
+              border: '1px dashed rgba(0, 235, 212, 0.06)',
+              opacity: 0.65,
+              textAlign: 'left',
+            }}
+            aria-label="NiraNexus Record — coming soon"
+          >
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.15rem', color: '#ffffff', margin: 0 }}>Record</h2>
+              <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#64748b', backgroundColor: 'rgba(100, 116, 139, 0.12)', padding: '0.2rem 0.7rem', borderRadius: 10, textTransform: 'uppercase', letterSpacing: '1px' }}>COMING SOON</span>
+            </div>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+              Cross-product provenance and audit trail. Every deliberation artifact — from Model Council or Veritas — registered, indexed, and permanently verifiable.
+            </p>
+          </div>
+        </div>
 
         {/* Scroll cue */}
         <button
@@ -131,14 +183,14 @@ export default function Home() {
             The Architecture of Trust
           </h2>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#64748b', textAlign: 'center', maxWidth: 520, margin: '0 auto 3rem', lineHeight: 1.6 }}>
-            Deliberation is the antidote to AI hallucination. My systems don&apos;t just guess &mdash; they cross-examine, synthesize, and enforce governance at every layer.
+            Deliberation is the antidote to AI hallucination. Every system output is cross-examined by multiple frontier models before it reaches the user — whether through Model Council, Veritas, or any NiraNexus product.
           </p>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5rem' }}>
-            <Principle title="Deliberation over Generation" body="Four frontier models debate before answering. Three rounds of Opening Statements, Cross-Examination, and Rebuttal. One synthesized verdict. No single-model hallucination survives cross-examination." tags={['GPT-5.5 Pro', 'DeepSeek R1', 'Claude Sonnet', 'Qwen 3.7']} />
-            <Principle title="Traceable Deliberation" body="Every deliberation produces a session-scoped, exportable artifact stored in a hardened Supabase backend. The adversarial process is preserved — your decision-path is traceable, not disposable." />
+            <Principle title="Deliberation over Generation" body="Four frontier models debate before answering. Three rounds of Opening Statements, Cross-Examination, and Rebuttal. One synthesized verdict. No single-model hallucination survives cross-examination. Every NiraNexus product inherits this pipeline." />
+            <Principle title="Traceable Deliberation" body="Every system output produces a session-scoped, exportable artifact stored in a hardened Supabase backend. The adversarial process is preserved — your decision-path is traceable, not disposable." />
             <Principle title="Hardened over Open" body="Pre-code gates enforce mechanical compliance before any line ships. Row-Level Security governs every database query. OAuth 2.0 with JWT verification. AI infrastructure without governance is a liability." />
-            <Principle title="Evidence Basis" body="Every verdict includes an auditable Evidence Basis. Claims are labeled VERIFIED (retrieved evidence supports the claim), DISPUTED (conflicting evidence detected), or UNVERIFIED (insufficient data). The system surfaces its own limitations — not fabricated confidence." />
+            <Principle title="Evidence Basis" body="Every system output includes an auditable Evidence Basis. Claims are labeled VERIFIED (retrieved evidence supports the claim), DISPUTED (conflicting evidence detected), or UNVERIFIED (insufficient data). The system surfaces its own limitations — not fabricated confidence." />
           </div>
         </section>
       </RevealSection>
@@ -166,7 +218,7 @@ export default function Home() {
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: '0.6rem' }}>
                   <span style={{ color: '#FFC107', flexShrink: 0 }}>DISPUTED</span>
-                  <span style={{ color: '#94a3b8' }}>Gartner — autonomous agents 'safe enough' by 2027 vs. 2028 (conflicting analyst timelines)</span>
+                  <span style={{ color: '#94a3b8' }}>Gartner — autonomous agents &apos;safe enough&apos; by 2027 vs. 2028 (conflicting analyst timelines)</span>
                 </div>
               </div>
             </div>
@@ -180,45 +232,61 @@ export default function Home() {
           ZONE 3 — SYSTEM COMPONENTS
           ═══════════════════════════════════════════════════════════ */}
       <RevealSection>
-        <section style={{ padding: '4rem 2rem', maxWidth: 800, margin: '0 auto' }} aria-label="System components">
+        <section style={{ padding: '4rem 2rem', maxWidth: 900, margin: '0 auto' }} aria-label="System components">
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.4rem', color: '#ffffff', textAlign: 'center', marginBottom: '2.5rem' }}>
             System Components
           </h2>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.85rem', color: '#64748b', textAlign: 'center', marginBottom: '2rem' }}>
-            Each component is a piece of the NiraNexus-OS. Not standalone products &mdash; a unified agentic infrastructure.
+            Each component is a piece of the NiraNexus-OS. Not standalone products &mdash; a unified operating system for auditable deliberation.
           </p>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', maxWidth: 900, margin: '0 auto' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.5rem', maxWidth: 960, margin: '0 auto' }}>
+
             {/* Model Council */}
-            <a href="https://model-council.niranexus.com" style={{ display: 'block', textDecoration: 'none', color: 'inherit', minWidth: 0 }} aria-label="Model Council — live product">
+            <a href="https://model-council.niranexus.com" style={{ display: 'block', textDecoration: 'none', color: 'inherit', minWidth: 0, outline: 'none' }} className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f] rounded-xl" aria-label="Model Council — The Adversarial Engine, live">
             <div style={{ padding: '2rem', backgroundColor: 'rgba(10, 14, 26, 0.4)', borderRadius: 12, border: '1px solid rgba(0, 235, 212, 0.12)', transition: 'border-color 0.2s', height: '100%' }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.75rem' }}>
                 <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', color: '#ffffff', margin: 0 }}>Model Council</h3>
                 <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#22c55e', backgroundColor: 'rgba(34, 197, 94, 0.1)', padding: '0.2rem 0.7rem', borderRadius: 10, textTransform: 'uppercase', letterSpacing: '1px' }} role="status">LIVE</span>
               </div>
+              <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.75rem' }}>The Adversarial Engine</p>
               <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
-                              A multi-model deliberation engine with auditable source verification. Opening Statements → Cross-Examination → Rebuttal → Synthesis. Google OAuth, quota enforcement, persistent verdicts with Evidence Basis. Export to PDF, Markdown, or JSON — every file signed with NiraNexus provenance.
-                            </p>
-                            <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '0.75rem', lineHeight: 1.6 }}>Built-in Protections: Mid-debate checkpoints &middot; Quorum enforcement &middot; Live web search + source verification &middot; Telegram bot integration</p>
+                Multi-model deliberation pipeline with auditable source verification. Opening Statements → Cross-Examination → Rebuttal → Synthesis. Google OAuth, quota enforcement, persistent verdicts with Evidence Basis. Export to PDF, Markdown, or JSON — every file signed with NiraNexus provenance.
+              </p>
+              <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '0.75rem', lineHeight: 1.6 }}>Mid-debate checkpoints &middot; Quorum enforcement &middot; Live web search + source verification &middot; Telegram bot integration</p>
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', marginTop: '1rem', opacity: 0.7 }}>
                 model-council.niranexus.com &rarr;
-              </p>
-            <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', marginTop: '0.5rem', opacity: 0.7 }}>
-                <span onClick={(e) => { e.preventDefault(); e.stopPropagation(); router.push('/model-council'); }} style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', marginTop: '0.5rem', opacity: 0.7, cursor: 'pointer', outline: 'none' }} className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-1 focus-visible:ring-offset-[#05070f]" tabIndex={0} onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); e.stopPropagation(); router.push('/model-council'); } }} role="link">
-                View Engineering Specification &rarr;
-              </span>
               </p>
             </div>
           </a>
 
-            {/* Next Component */}
-            <div style={{ padding: '2rem', backgroundColor: 'rgba(10, 14, 26, 0.25)', borderRadius: 12, border: '1px dashed rgba(0, 235, 212, 0.06)', opacity: 0.6, minWidth: 0 }}>
+            {/* Veritas */}
+            <a href="/veritas" style={{ display: 'block', textDecoration: 'none', color: 'inherit', minWidth: 0, outline: 'none' }} className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f] rounded-xl" aria-label="Veritas — The Assurance Interface, building">
+            <div style={{ padding: '2rem', backgroundColor: 'rgba(10, 14, 26, 0.4)', borderRadius: 12, border: '1px solid rgba(0, 235, 212, 0.12)', transition: 'border-color 0.2s', height: '100%' }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.75rem' }}>
-                <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', color: '#ffffff', margin: 0 }}>Next Component</h3>
-                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#ffc107', backgroundColor: 'rgba(255, 193, 7, 0.1)', padding: '0.2rem 0.7rem', borderRadius: 10, textTransform: 'uppercase', letterSpacing: '1px' }}>IN DEVELOPMENT</span>
+                <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', color: '#ffffff', margin: 0 }}>Veritas</h3>
+                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#ffc107', backgroundColor: 'rgba(255, 193, 7, 0.1)', padding: '0.2rem 0.7rem', borderRadius: 10, textTransform: 'uppercase', letterSpacing: '1px' }} role="status">BUILDING</span>
               </div>
+              <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.75rem' }}>The Assurance Interface</p>
               <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
-                The next component of the NiraNexus-OS. What gets built is determined by what the infrastructure makes possible.
+                The NiraNexus Engine, precision-tuned for professional expertise. Legal, accounting, and consulting professionals execute auditable deliberation with domain-specific frameworks of evidence, precedent, and regulatory compliance. Veritas does not generate text — it verifies intent.
+              </p>
+              <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '0.75rem', lineHeight: 1.6 }}>Domain personas &middot; Provenance-signed artifacts &middot; Regulatory audit trails &middot; NiraNexus Record backing</p>
+              <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', marginTop: '1rem', opacity: 0.7 }}>
+                View Engineering Specification &rarr;
+              </p>
+            </div>
+          </a>
+
+            {/* Record */}
+            <div style={{ padding: '2rem', backgroundColor: 'rgba(10, 14, 26, 0.25)', borderRadius: 12, border: '1px dashed rgba(0, 235, 212, 0.06)', opacity: 0.65, minWidth: 0 }} aria-label="NiraNexus Record — coming soon">
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.75rem' }}>
+                <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', color: '#ffffff', margin: 0 }}>Record</h3>
+                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#64748b', backgroundColor: 'rgba(100, 116, 139, 0.1)', padding: '0.2rem 0.7rem', borderRadius: 10, textTransform: 'uppercase', letterSpacing: '1px' }}>COMING SOON</span>
+              </div>
+              <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.75rem' }}>Cross-Product Provenance</p>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+                Every deliberation artifact — from Model Council or Veritas — registered, indexed, and permanently verifiable. The Record is the infrastructure backbone: a single source of truth for cross-product audit trails and compliance evidence.
               </p>
             </div>
           </div>
@@ -228,17 +296,17 @@ export default function Home() {
       <Divider />
 
       {/* ═══════════════════════════════════════════════════════════
-          ZONE 4 — GOVERNANCE
+          ZONE 4 — THE HARDENING
           ═══════════════════════════════════════════════════════════ */}
       <RevealSection>
         <footer style={{ padding: '4rem 2rem', textAlign: 'center', maxWidth: 700, margin: '0 auto' }} aria-label="System governance and founder">
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.4rem', color: '#ffffff', marginBottom: '0.5rem' }}>The Hardening</h2>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: '#64748b', marginBottom: '2rem', maxWidth: 480, margin: '0 auto 2rem', lineHeight: 1.5 }}>
-            Governance is not an afterthought. Every layer of NiraNexus-OS enforces its own integrity.
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: '#64748b', marginBottom: '1.5rem', maxWidth: 520, margin: '0 auto 1.5rem', lineHeight: 1.5 }}>
+            Governance is not an afterthought. Every layer of NiraNexus-OS enforces its own integrity. Every product — Model Council, Veritas, and beyond — inherits the same hardened infrastructure. Same pipeline, same governance.
           </p>
           <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Badge label="Framework" value="v3.0-lite" detail="8-phase governance" />
-            <Badge label="Pre-Code Gate" value="15 Checks" detail="Mechanical enforcement" />
+            <Badge label="Pre-Code Gate" value="17 Checks" detail="Mechanical enforcement" />
             <Badge label="RLS Policies" value="Enforced" detail="Row-Level Security" />
             <Badge label="Authentication" value="OAuth 2.0" detail="Google + JWT" />
             <Badge label="Export" value="PDF/MD/JSON" detail="Signed provenance" />
@@ -260,18 +328,11 @@ function Stat({ value, label, sub }: { value: string | number; label: string; su
   );
 }
 
-function Principle({ title, body, tags }: { title: string; body: string; tags?: string[] }) {
+function Principle({ title, body }: { title: string; body: string }) {
   return (
     <div style={{ padding: '1.5rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.06)' }}>
       <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.15rem', fontWeight: 700, color: '#ffffff', marginBottom: '0.6rem' }}>{title}</h3>
       <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>{body}</p>
-      {tags && (
-        <div style={{ display: 'flex', gap: '0.4rem', marginTop: '0.75rem', flexWrap: 'wrap' }}>
-          {tags.map(t => (
-            <span key={t} style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#00ebd4', backgroundColor: 'rgba(0, 235, 212, 0.08)', padding: '0.15rem 0.5rem', borderRadius: 8, textTransform: 'uppercase', letterSpacing: '0.5px' }}>{t}</span>
-          ))}
-        </div>
-      )}
     </div>
   );
 }
