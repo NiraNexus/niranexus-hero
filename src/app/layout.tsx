@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Serif_Display, Source_Serif_4, IBM_Plex_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const dmSerifDisplay = DM_Serif_Display({
@@ -67,6 +68,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         {children}
+        <Analytics />
         <footer style={{ padding: '2rem', textAlign: 'center' }}>
           <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b' }}>
             <a href="https://niranexus.com" style={{ color: '#00EBD4', textDecoration: 'none' }} className="hover:underline focus-visible:ring-2 focus-visible:ring-[#00EBD4] focus-visible:outline-none rounded px-0.5">NiraNexus-OS</a> &copy; {new Date().getFullYear()} {'—'} Founded by Rakesh Maheswaran. Agentic infrastructure, not a wrapper.
