@@ -11,8 +11,9 @@ export async function GET() {
     );
 
     const { count, error } = await supabase
-      .from('debates')
-      .select('*', { count: 'exact', head: true });
+      .from('verdicts')
+      .select('*', { count: 'exact', head: true })
+      .not('claims', 'is', null);
 
     if (error) throw error;
 

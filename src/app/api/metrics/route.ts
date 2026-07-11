@@ -23,14 +23,20 @@ export async function GET() {
     const today = new Date().toISOString().split('T')[0];
 
     const [totalRes, usersRes, todayRes, payingRes] = await Promise.all([
-      supabase.from('debates').select('id', { count: 'exact', head: true }),
-      supabase.from('debates').select('user_id', { count: 'exact', head: true }).neq('user_id', null),
-      supabase.from('debates').select('id', { count: 'exact', head: true }).gte('created_at', today),
+      supabase.from('verdicts').select('debate_id', { count: 'exact', head: true }).not('claims', 'is', null),
+      supabase.from('verdicts').select('debate_id').not('claims', 'is', null),
+      supabase.from('verdicts').select('debate_id', { count: 'exact', head: true }).not('claims', 'is', null).gte('created_at', today),
       supabase.from('profiles').select('user_id', { count: 'exact', head: true }).gt('credits_remaining', 0),
     ]);
 
     const debatesTotal = totalRes.count ?? 0;
-    const uniqueUsers = new Set(usersRes.data?.map((d: { user_id: string }) => d.user_id)).size;
+    // Get unique users from valid verdicts by fetching debate user_ids
+    const { data: debateUsers } = await supabase
+      .from('debates')
+      .select('user_id')
+      .in('id', (usersRes.data || []).map((v: any) => v.debate_id))
+      .neq('user_id', null);
+    const uniqueUsers = new Set((debateUsers || []).map((d: any) => d.user_id)).size;
     const debatesToday = todayRes.count ?? 0;
     const totalUsers = uniqueUsers || 1; // avoid division by zero
     const payingUsers = payingRes.count ?? 0;
