@@ -168,6 +168,38 @@ export default function ModelCouncilPage() {
 
       <Divider />
 
+      {/* ═══ DOCUMENT-AUGMENTED DELIBERATION ═══ */}
+      <section style={{ padding: '3rem 2rem', maxWidth: 700, margin: '0 auto' }}>
+        <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '2rem', textAlign: 'center' }}>
+          Document-Augmented Deliberation
+        </h2>
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.7, textAlign: 'center', maxWidth: 560, margin: '0 auto 2rem' }}>
+          Upload a PDF via the deliberation page or send one directly to the Telegram bot. The Council cross-examines your document — models are grounded in the source text, not parametric memory. Claims are verified against the uploaded material, not the model&apos;s training data.
+        </p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1rem' }}>
+          <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
+            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Web Upload</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+              Attach a PDF on the deliberation page. Text is extracted and injected into the Council pipeline. Max 10MB.
+            </p>
+          </div>
+          <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
+            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Telegram Upload</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+              Send a PDF to @NiraNexus_ModelCouncilBot, then run /deliberate with your question. Same pipeline, same governance.
+            </p>
+          </div>
+          <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
+            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Grounded Adversarial Review</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+              Models cross-examine each other&apos;s interpretations of the source document. Fabricated claims are detected and discarded — the text is the ground truth.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <Divider />
+
       {/* ═══ SECTION 3 — LIVE PROOF ═══ */}
       <section style={{ padding: '3rem 2rem', maxWidth: 900, margin: '0 auto' }}>
         <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '2rem', textAlign: 'center' }}>
@@ -208,13 +240,31 @@ export default function ModelCouncilPage() {
           <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
             <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Quota Monitor</h3>
             <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
-              Color-coded thresholds. Real-time usage tracking. Circuit breaker enforcement at pre-flight and round boundaries.
+              Real-time debate tracking with progressive enforcement. Circuit breaker at pre-flight and round boundaries.
             </p>
           </div>
           <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
-            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#60A5FA', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Model Audit</h3>
+            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#60A5FA', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Cost Analytics</h3>
             <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
-              Daily automated audit of all model IDs against live OpenRouter. Dead models flagged before they cause silent failures.
+              Per-model cost breakdown including orchestrator. Daily, weekly, and monthly aggregation with model-level precision.
+            </p>
+          </div>
+          <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
+            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#22c55e', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Usage Analytics</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+              Lifetime, daily, and weekly throughput. Unique users, average duration, document-augmented deliberation counts.
+            </p>
+          </div>
+          <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
+            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#f59e0b', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Revenue Tracker</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+              Revenue reconciliation with refund tracking. Tier-based breakdown. Real-time MRR estimation.
+            </p>
+          </div>
+          <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
+            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#FFC107', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Model Health</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+              Real-time success rates, error counts, and per-model latency. Daily automated audit against live OpenRouter roster.
             </p>
           </div>
         </div>
@@ -236,8 +286,11 @@ export default function ModelCouncilPage() {
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#94a3b8' }}>
             <div><code style={{ color: '#00ebd4', background: 'none' }}>/deliberate &lt;question&gt;</code> — Run a Council deliberation</div>
-            <div><code style={{ color: '#00ebd4', background: 'none' }}>/status</code> — Check quota and model availability</div>
+            <div><code style={{ color: '#00ebd4', background: 'none' }}>/deliberate &lt;question&gt;</code> + PDF — Document-grounded deliberation</div>
+            <div><code style={{ color: '#00ebd4', background: 'none' }}>/status</code> — Check remaining debates</div>
+            <div><code style={{ color: '#00ebd4', background: 'none' }}>/clear</code> — Clear a pending deliberation</div>
             <div><code style={{ color: '#00ebd4', background: 'none' }}>/link &lt;code&gt;</code> — Link Telegram account to web identity</div>
+            <div><code style={{ color: '#00ebd4', background: 'none' }}>/start</code> — Bot overview and onboarding</div>
           </div>
         </div>
       </section>

@@ -69,7 +69,7 @@ export default function Home() {
             <>
               <Stat value={status.debates} label="Proven Decisions" sub="Audited via Supabase RLS" />
               <Stat value={`${status.models}x`} label="Active Models" sub="Multi-model deliberation stack" />
-              <Stat value={status.status} label="System Status" sub="Framework v3.0-lite enforced" />
+              <Stat value={status.status} label="System Status" sub="Framework v3.0 / 17-gate enforced" />
             </>
           ) : statusError ? (
             <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: '#64748b' }}>System telemetry offline</p>
@@ -251,7 +251,7 @@ export default function Home() {
               </div>
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.75rem' }}>The Adversarial Engine</p>
               <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
-                Multi-model deliberation pipeline with auditable source verification. Opening Statements → Cross-Examination → Rebuttal → Synthesis. Google OAuth, quota enforcement, persistent verdicts with Evidence Basis. Export to PDF, Markdown, or JSON — every file signed with NiraNexus provenance.
+                Multi-model deliberation pipeline with auditable source verification. Opening Statements → Cross-Examination → Rebuttal → Synthesis. Document-augmented deliberation — upload PDFs via web or Telegram. Export to PDF, Markdown, or JSON — every file signed with NiraNexus provenance.
               </p>
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '0.75rem', lineHeight: 1.6 }}>Mid-debate checkpoints &middot; Quorum enforcement &middot; Live web search + source verification &middot; Telegram bot integration</p>
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', marginTop: '1rem', opacity: 0.7 }}>
@@ -310,7 +310,7 @@ export default function Home() {
             Governance is not an afterthought. Every layer of NiraNexus-OS enforces its own integrity. Every component — Model Council, Veritas, and beyond — inherits the same hardened infrastructure. Same pipeline, same governance.
           </p>
           <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Badge label="Framework" value="v3.0-lite" detail="8-phase governance" />
+            <Badge label="Framework" value="v3.0" detail="17-gate enforcement" />
             <Badge label="Pre-Code Gate" value="17 Checks" detail="Mechanical enforcement" />
             <Badge label="RLS Policies" value="Enforced" detail="Row-Level Security" />
             <Badge label="Authentication" value="OAuth 2.0" detail="Google + JWT" />
