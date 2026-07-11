@@ -96,7 +96,7 @@ export default function ModelCouncilPage() {
 
       <Divider />
 
-      {/* ═══ EVIDENCE BASIS SPECIFICATION ═══ */}
+      {/* ═══ EVIDENCE BASIS ═══ */}
       <section style={{ padding: '3rem 2rem', maxWidth: 700, margin: '0 auto' }}>
         <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '2rem', textAlign: 'center' }}>
           Evidence Basis
@@ -104,7 +104,6 @@ export default function ModelCouncilPage() {
         <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.7, textAlign: 'center', maxWidth: 560, margin: '0 auto 2rem' }}>
           Every verdict includes an auditable Evidence Basis — an audit trail of live-retrieved sources, not a bibliography of fabricated references. Claims are labeled against evidence, not asserted from parametric memory.
         </p>
-
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem' }}>
           <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
             <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#4ADE80', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>VERIFIED</h3>
@@ -125,7 +124,6 @@ export default function ModelCouncilPage() {
             </p>
           </div>
         </div>
-
         <div style={{ marginTop: '2rem', padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.2)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.06)' }}>
           <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Operational Mechanics</h3>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.7, margin: 0 }}>
@@ -200,85 +198,13 @@ export default function ModelCouncilPage() {
 
       <Divider />
 
-      {/* ═══ SECTION 3 — LIVE PROOF ═══ */}
-      <section style={{ padding: '3rem 2rem', maxWidth: 900, margin: '0 auto' }}>
-        <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '2rem', textAlign: 'center' }}>
-          System Observability
-        </h2>
-        <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-          {status ? (
-            <>
-              <LiveMetric value={status.debates} label="Proven Decisions" sub="[SOURCE: SUPABASE_DB]" />
-              <LiveMetric value={`${status.models}x`} label="Active Models" sub="[MULTI-MODEL STACK]" />
-              <LiveMetric value={status.status} label="System Status" sub="[RLS: ENFORCED]" />
-            </>
-          ) : statusError ? (
-            <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: '#64748b' }}>Telemetry unavailable</p>
-          ) : (
-            <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: '#64748b' }}>System initializing&hellip;</p>
-          )}
-        </div>
-      </section>
-
-      <Divider />
-
-      {/* ═══ GOVERNANCE COCKPIT ═══ */}
-      <section style={{ padding: '3rem 2rem', maxWidth: 700, margin: '0 auto' }}>
-        <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '2rem', textAlign: 'center' }}>
-          Governance Cockpit
-        </h2>
-        <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.7, textAlign: 'center', maxWidth: 560, margin: '0 auto 2rem' }}>
-          Infrastructure-grade operational controls. The governance cockpit provides real-time observability, emergency intervention, and audit capabilities — not an afterthought, a first-class system layer.
-        </p>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1rem' }}>
-          <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
-            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#FF6B6B', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Kill Switch</h3>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
-              Emergency stop for all active deliberations. Layered at API and engine yield points. Founder-only access.
-            </p>
-          </div>
-          <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
-            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Quota Monitor</h3>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
-              Real-time debate tracking with progressive enforcement. Circuit breaker at pre-flight and round boundaries.
-            </p>
-          </div>
-          <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
-            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#60A5FA', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Cost Analytics</h3>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
-              Per-model cost breakdown including orchestrator. Daily, weekly, and monthly aggregation with model-level precision.
-            </p>
-          </div>
-          <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
-            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#22c55e', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Usage Analytics</h3>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
-              Lifetime, daily, and weekly throughput. Unique users, average duration, document-augmented deliberation counts.
-            </p>
-          </div>
-          <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
-            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#f59e0b', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Revenue Tracker</h3>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
-              Revenue reconciliation with refund tracking. Tier-based breakdown. Real-time MRR estimation.
-            </p>
-          </div>
-          <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
-            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#FFC107', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Model Health</h3>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
-              Real-time success rates, error counts, and per-model latency. Daily automated audit against live OpenRouter roster.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <Divider />
-
       {/* ═══ TELEGRAM INTEGRATION ═══ */}
       <section style={{ padding: '3rem 2rem', maxWidth: 700, margin: '0 auto' }}>
         <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '2rem', textAlign: 'center' }}>
           Telegram Integration
         </h2>
         <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.7, textAlign: 'center', maxWidth: 560, margin: '0 auto 2rem' }}>
-          The Council is accessible as a Telegram bot. Deliberate from any device without opening a browser. Same models, same quota enforcement, same governance — a new entry point, not a separate component.
+          The Council is accessible as a Telegram bot. Deliberate from any device without opening a browser. Same models, same governance — a new entry point, not a separate component.
         </p>
         <div style={{ padding: '1.5rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)', maxWidth: 480, margin: '0 auto' }}>
           <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#00ebd4', marginBottom: '1rem' }}>
@@ -306,13 +232,67 @@ export default function ModelCouncilPage() {
           Every deliberation produces a shareable public record. No authentication required to view. Source attribution, confidence scores, dissent tracking, and evidence basis — all publicly auditable.
         </p>
         <div style={{ padding: '1.5rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)', maxWidth: 480, margin: '0 auto', textAlign: 'center' }}>
-                  <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#94a3b8', marginBottom: '0.75rem' }}>
-                    Example: model-council.niranexus.com/debate/[id]
-                  </p>
-                  <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
-                    Every Council deliberation produces a shareable public URL.
-                  </p>
-                </div>
+          <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#94a3b8', marginBottom: '0.75rem' }}>
+            Example: model-council.niranexus.com/debate/[id]
+          </p>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+            Every Council deliberation produces a shareable public URL.
+          </p>
+        </div>
+      </section>
+
+      <Divider />
+
+      {/* ═══ SYSTEM OBSERVABILITY ═══ */}
+      <section style={{ padding: '3rem 2rem', maxWidth: 900, margin: '0 auto' }}>
+        <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '2rem', textAlign: 'center' }}>
+          System Observability
+        </h2>
+        <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+          {status ? (
+            <>
+              <LiveMetric value={status.debates} label="Proven Decisions" sub="[SOURCE: SUPABASE_DB]" />
+              <LiveMetric value={`${status.models}x`} label="Active Models" sub="[MULTI-MODEL STACK]" />
+              <LiveMetric value={status.status} label="System Status" sub="[RLS: ENFORCED]" />
+            </>
+          ) : statusError ? (
+            <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: '#64748b' }}>Telemetry unavailable</p>
+          ) : (
+            <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: '#64748b' }}>System initializing&hellip;</p>
+          )}
+        </div>
+      </section>
+
+      <Divider />
+
+      {/* ═══ GOVERNANCE COCKPIT ═══ */}
+      <section style={{ padding: '3rem 2rem', maxWidth: 700, margin: '0 auto' }}>
+        <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '2rem', textAlign: 'center' }}>
+          Governance Cockpit
+        </h2>
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.7, textAlign: 'center', maxWidth: 560, margin: '0 auto 2rem' }}>
+          Infrastructure-grade operational controls. The governance cockpit provides real-time observability, emergency intervention, and audit capabilities — not an afterthought, a first-class system layer. Founder-access only.
+        </p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1rem' }}>
+          <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
+            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#FF6B6B', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Kill Switch</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+              Emergency stop for all active deliberations. Layered at API and engine yield points.
+            </p>
+          </div>
+          <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
+            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Quota Monitor</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+              Real-time debate tracking with progressive enforcement. Circuit breaker at pre-flight and round boundaries.
+            </p>
+          </div>
+          <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
+            <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#FFC107', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Model Health</h3>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
+              Real-time success rates, error counts, and per-model latency. Daily automated audit against live OpenRouter roster.
+            </p>
+          </div>
+        </div>
       </section>
 
       <Divider />
@@ -360,9 +340,9 @@ export default function ModelCouncilPage() {
           </p>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.78rem', color: '#94a3b8', margin: '0.5rem 0 0', lineHeight: 1.5 }}>
             Accessing the Council requires authenticated session handling via Google OAuth to maintain SOC 2-ready compliance data integrity and professional audit trails.
-                                  </p>
-                                </div>
-                  </section>
+          </p>
+        </div>
+      </section>
 
       <ScrollToTop />
     </main>
