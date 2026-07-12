@@ -23,7 +23,7 @@ export async function GET() {
     const today = new Date().toISOString().split('T')[0];
 
     const [totalRes, usersRes, todayRes, payingRes] = await Promise.all([
-      supabase.from('verdicts').select('debate_id', { count: 'exact', head: true }).not('claims', 'is', null),
+      supabase.from('verdicts').select('debate_id', { count: 'exact', head: true }),
       supabase.from('verdicts').select('debate_id').not('claims', 'is', null),
       supabase.from('verdicts').select('debate_id', { count: 'exact', head: true }).not('claims', 'is', null).gte('created_at', today),
       supabase.from('profiles').select('user_id', { count: 'exact', head: true }).gt('credits_remaining', 0),
