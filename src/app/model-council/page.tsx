@@ -212,7 +212,7 @@ export default function ModelCouncilPage() {
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#94a3b8' }}>
             <div><code style={{ color: '#00ebd4', background: 'none' }}>/deliberate &lt;question&gt;</code> — Run a Council deliberation</div>
-            <div><code style={{ color: '#00ebd4', background: 'none' }}>/deliberate &lt;question&gt;</code> + PDF — Document-grounded deliberation</div>
+            <div><code style={{ color: '#00ebd4', background: 'none' }}>PDF</code> + <code style={{ color: '#00ebd4', background: 'none' }}>/deliberate &lt;question&gt;</code> — Document-grounded deliberation</div>
             <div><code style={{ color: '#00ebd4', background: 'none' }}>/status</code> — Check remaining debates</div>
             <div><code style={{ color: '#00ebd4', background: 'none' }}>/clear</code> — Clear a pending deliberation</div>
             <div><code style={{ color: '#00ebd4', background: 'none' }}>/link &lt;code&gt;</code> — Link Telegram account to web identity</div>
