@@ -7,9 +7,13 @@ export default function VeritasPage() {
   return (
     <main style={{ backgroundColor: '#05070f', color: '#cbd5e1', minHeight: '100vh', fontFamily: 'var(--font-body)' }} aria-label="Veritas technical specification">
 
-      {/* Breadcrumb */}
-      <div style={{ padding: '1.5rem 2rem 0', maxWidth: 800, margin: '0 auto' }}>
-        <Link href="/" style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#00ebd4', textDecoration: 'none', outline: 'none' }} className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f] rounded">
+      {/* Sticky nav banner — persists during scroll */}
+      <div style={{ position: 'sticky', top: 0, zIndex: 10, padding: '0.75rem 1rem', display: 'flex', alignItems: 'center', backgroundColor: 'rgba(5, 7, 15, 0.92)', backdropFilter: 'blur(8px)', borderBottom: '1px solid rgba(0, 235, 212, 0.1)' }}>
+        <Link
+          href="/"
+          style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: '#00ebd4', textDecoration: 'none', outline: 'none' }}
+          className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f] rounded"
+        >
           &larr; NiraNexus Home
         </Link>
       </div>
