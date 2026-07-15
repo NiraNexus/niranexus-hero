@@ -27,7 +27,7 @@ export default function ModelCouncilPage() {
             <div style={{ position: 'sticky', top: 0, zIndex: 10, padding: '0.75rem 1rem', display: 'flex', alignItems: 'center', backgroundColor: 'rgba(5, 7, 15, 0.92)', backdropFilter: 'blur(8px)', borderBottom: '1px solid rgba(0, 235, 212, 0.1)' }}>
               <Link
                 href="/"
-                style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: '#00ebd4', textDecoration: 'none', outline: 'none' }}
+                style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: '#00ebd4', textDecoration: 'underline', outline: 'none' }}
                 className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f] rounded"
               >
                 &larr; NiraNexus Home
@@ -332,7 +332,7 @@ export default function ModelCouncilPage() {
             fontSize: '1.1rem',
             fontWeight: 700,
             borderRadius: 50,
-            textDecoration: 'none',
+            textDecoration: 'underline',
             boxShadow: '0 4px 20px rgba(0, 235, 212, 0.35)',
           }}
         >
@@ -353,15 +353,15 @@ export default function ModelCouncilPage() {
       {/* Footer */}
       <footer style={{ padding: '1.5rem 2rem 3rem', textAlign: 'center' }}>
         <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b' }}>
-          <a href="https://log.niranexus.com" style={{ color: '#64748b', textDecoration: 'none' }} className="hover:underline">Log</a>
+          <a href="https://log.niranexus.com" style={{ color: '#64748b', textDecoration: 'underline' }} className="hover:underline">Log</a>
           &nbsp;|&nbsp;
-          <a href="/model-council" style={{ color: '#64748b', textDecoration: 'none' }} className="hover:underline">Specifications</a>
+          <a href="/model-council" style={{ color: '#64748b', textDecoration: 'underline' }} className="hover:underline">Specifications</a>
           &nbsp;|&nbsp;
-          <a href="https://model-council.niranexus.com/faq" style={{ color: '#64748b', textDecoration: 'none' }} className="hover:underline">FAQ</a>
+          <a href="https://model-council.niranexus.com/faq" style={{ color: '#64748b', textDecoration: 'underline' }} className="hover:underline">FAQ</a>
           &nbsp;|&nbsp;
-          <a href="/privacy" style={{ color: '#64748b', textDecoration: 'none' }} className="hover:underline">Privacy</a>
+          <a href="/privacy" style={{ color: '#64748b', textDecoration: 'underline' }} className="hover:underline">Privacy</a>
           &nbsp;|&nbsp;
-          <a href="/terms" style={{ color: '#64748b', textDecoration: 'none' }} className="hover:underline">Terms</a>
+          <a href="/terms" style={{ color: '#64748b', textDecoration: 'underline' }} className="hover:underline">Terms</a>
         </p>
       </footer>
     </main>
