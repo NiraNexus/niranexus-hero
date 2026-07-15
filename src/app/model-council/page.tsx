@@ -353,9 +353,11 @@ export default function ModelCouncilPage() {
       {/* Footer */}
       <footer style={{ padding: '1.5rem 2rem 3rem', textAlign: 'center' }}>
         <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b' }}>
-          <a href="https://model-council.niranexus.com/faq" style={{ color: '#64748b', textDecoration: 'none' }} className="hover:underline">FAQ</a>
+          <a href="https://log.niranexus.com" style={{ color: '#64748b', textDecoration: 'none' }} className="hover:underline">Log</a>
           &nbsp;|&nbsp;
           <a href="/model-council" style={{ color: '#64748b', textDecoration: 'none' }} className="hover:underline">Specifications</a>
+          &nbsp;|&nbsp;
+          <a href="https://model-council.niranexus.com/faq" style={{ color: '#64748b', textDecoration: 'none' }} className="hover:underline">FAQ</a>
           &nbsp;|&nbsp;
           <a href="/privacy" style={{ color: '#64748b', textDecoration: 'none' }} className="hover:underline">Privacy</a>
           &nbsp;|&nbsp;

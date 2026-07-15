@@ -161,6 +161,10 @@ export default function Home() {
                   </div>
                 </div>
 
+        <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '1.5rem', textAlign: 'center' }}>
+          <a href="https://log.niranexus.com" style={{ color: '#00EBD4', textDecoration: 'none' }} className="hover:underline focus-visible:ring-2 focus-visible:ring-[#00EBD4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f] focus-visible:outline-none rounded px-0.5">Read the operational record →</a>
+        </p>
+
         {/* Scroll cue */}
         <button
           onClick={() => window.scrollTo({ top: window.innerHeight * 0.8, behavior: 'smooth' })}
