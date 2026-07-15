@@ -18,7 +18,7 @@ interface FooterProps {
 
 const linkStyle: React.CSSProperties = {
   color: '#64748b',
-  textDecoration: 'none',
+  textDecoration: 'underline',
 };
 
 const focusRing = 'hover:underline focus-visible:ring-2 focus-visible:ring-[#00EBD4] focus-visible:outline-none rounded px-0.5';
@@ -60,7 +60,7 @@ export default function NiraNexusFooter({ project, fontMono }: FooterProps) {
       <p style={{ fontFamily: fontMono || 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b' }}>
         <a
           href="https://niranexus.com"
-          style={{ color: '#00EBD4', textDecoration: 'none' }}
+          style={{ color: '#00EBD4', textDecoration: 'underline' }}
           className="hover:underline focus-visible:ring-2 focus-visible:ring-[#00EBD4] focus-visible:outline-none rounded px-0.5"
         >
           NiraNexus-OS
