@@ -70,6 +70,7 @@ export default function NiraNexusNotFound({ project, message }: NotFoundProps) {
         </p>
         <a
           href={link.href}
+          className="hover:underline"
           style={{
             fontFamily: 'DM Serif Display, serif',
             color: '#00ebd4',

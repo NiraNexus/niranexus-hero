@@ -10,7 +10,7 @@ export default function TermsPage() {
   return (
     <main style={{ backgroundColor: '#05070f', color: '#cbd5e1', minHeight: '100vh', fontFamily: 'var(--font-body)', padding: '4rem 2rem', maxWidth: 720, margin: '0 auto', lineHeight: 1.7 }}>
       <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', marginBottom: '2rem' }}>
-        <a href="/" style={{ color: '#00ebd4', textDecoration: 'none' }}>&larr; NiraNexus home</a>
+        <a href="/" style={{ color: '#00ebd4', textDecoration: 'none' }} className="hover:underline">&larr; NiraNexus home</a>
       </p>
       <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', color: '#ffffff', marginBottom: '0.5rem' }}>Terms of Service</h1>
       <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginBottom: '2.5rem' }}>Effective date: 1 July 2026</p>

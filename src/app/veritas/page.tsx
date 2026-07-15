@@ -11,7 +11,7 @@ export default function VeritasPage() {
       <div style={{ position: 'sticky', top: 0, zIndex: 10, padding: '0.75rem 1rem', display: 'flex', alignItems: 'center', backgroundColor: 'rgba(5, 7, 15, 0.92)', backdropFilter: 'blur(8px)', borderBottom: '1px solid rgba(0, 235, 212, 0.1)' }}>
         <Link
           href="/"
-          style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: '#00ebd4', textDecoration: 'none', outline: 'none' }}
+          style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: '#00ebd4', textDecoration: 'none', outline: 'none' }} className="hover:underline"
           className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f] rounded"
         >
           &larr; NiraNexus Home
