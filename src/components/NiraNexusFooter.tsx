@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 /* ═══════════════════════════════════════════════════════════════
    NIRANEXUS SHARED FOOTER — v1.0.0
@@ -27,11 +28,11 @@ const MC_LINKS = (
     {' '}&nbsp;|&nbsp;{' '}
     <a href="https://niranexus.com/model-council" style={linkStyle} className={focusRing}>Specifications</a>
     {' '}&nbsp;|&nbsp;{' '}
-    <a href="/faq" style={linkStyle} className={focusRing}>FAQ</a>
+    <Link href="/faq" style={linkStyle} className={focusRing}>FAQ</Link>
     {' '}&nbsp;|&nbsp;{' '}
-    <a href="/privacy" style={linkStyle} className={focusRing}>Privacy</a>
+    <Link href="/privacy" style={linkStyle} className={focusRing}>Privacy</Link>
     {' '}&nbsp;|&nbsp;{' '}
-    <a href="/terms" style={linkStyle} className={focusRing}>Terms</a>
+    <Link href="/terms" style={linkStyle} className={focusRing}>Terms</Link>
   </>
 );
 
@@ -39,9 +40,9 @@ const DEFAULT_LINKS = (
   <>
     <a href="https://log.niranexus.com" style={linkStyle} className={focusRing}>Log</a>
     {' '}&nbsp;|&nbsp;{' '}
-    <a href="/privacy" style={linkStyle} className={focusRing}>Privacy</a>
+    <Link href="/privacy" style={linkStyle} className={focusRing}>Privacy</Link>
     {' '}&nbsp;|&nbsp;{' '}
-    <a href="/terms" style={linkStyle} className={focusRing}>Terms</a>
+    <Link href="/terms" style={linkStyle} className={focusRing}>Terms</Link>
   </>
 );
 
