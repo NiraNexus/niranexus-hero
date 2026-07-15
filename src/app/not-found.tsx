@@ -1,4 +1,4 @@
-import NiraNexusNotFound from '../../../Root_Repo/404';
+import NiraNexusNotFound from '@/components/NiraNexusNotFound';
 
 export default function NotFound() {
   return <NiraNexusNotFound project="hub" />;
