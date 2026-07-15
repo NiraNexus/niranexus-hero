@@ -31,9 +31,9 @@ const MC_LINKS = (
     {' '}&nbsp;|&nbsp;{' '}
     <Link href="/faq" style={linkStyle} className={focusRing}>FAQ</Link>
     {' '}&nbsp;|&nbsp;{' '}
-    <Link href="/privacy" style={linkStyle} className={focusRing}>Privacy</Link>
+    <a href="https://niranexus.com/privacy" style={linkStyle} className={focusRing}>Privacy</a>
     {' '}&nbsp;|&nbsp;{' '}
-    <Link href="/terms" style={linkStyle} className={focusRing}>Terms</Link>
+    <a href="https://niranexus.com/terms" style={linkStyle} className={focusRing}>Terms</a>
   </>
 );
 
@@ -41,9 +41,9 @@ const DEFAULT_LINKS = (
   <>
     <a href="https://log.niranexus.com" style={linkStyle} className={focusRing}>Log</a>
     {' '}&nbsp;|&nbsp;{' '}
-    <Link href="/privacy" style={linkStyle} className={focusRing}>Privacy</Link>
+    <a href="https://niranexus.com/privacy" style={linkStyle} className={focusRing}>Privacy</a>
     {' '}&nbsp;|&nbsp;{' '}
-    <Link href="/terms" style={linkStyle} className={focusRing}>Terms</Link>
+    <a href="https://niranexus.com/terms" style={linkStyle} className={focusRing}>Terms</a>
   </>
 );
 
