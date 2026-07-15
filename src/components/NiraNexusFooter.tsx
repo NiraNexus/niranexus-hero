@@ -1,3 +1,4 @@
+/* v1.0.0 — synced from github.com/NiraNexus/Root_Repo */
 import React from 'react';
 import Link from 'next/link';
 

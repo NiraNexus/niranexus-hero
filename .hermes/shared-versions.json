@@ -1,0 +1,8 @@
+{
+  "version": "1.0.0",
+  "source": "github.com/NiraNexus/Root_Repo",
+  "files": {
+    "src/components/NiraNexusFooter.tsx": "1.0.0",
+    "src/components/NiraNexusNotFound.tsx": "1.0.0"
+  }
+}
