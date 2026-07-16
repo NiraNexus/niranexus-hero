@@ -128,8 +128,6 @@ export default function PrivacyPage() {
           transition: 'background-color 0.2s',
         }}
         className="hover:underline"
-        onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'rgba(0, 235, 212, 0.2)'; }}
-        onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(0, 235, 212, 0.12)'; }}
       >
         ↑
       </a>
