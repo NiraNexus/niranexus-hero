@@ -7,10 +7,16 @@ export const metadata: Metadata = {
 
 export default function TermsPage() {
   return (
-    <main style={{ backgroundColor: '#05070f', color: '#cbd5e1', minHeight: '100vh', fontFamily: 'var(--font-body)', padding: '4rem 2rem 6rem', maxWidth: 720, margin: '0 auto', lineHeight: 1.7 }}>
-      <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', marginBottom: '2rem' }}>
-        <a href="/" style={{ color: '#00ebd4', textDecoration: 'none' }} className="hover:underline">&larr; NiraNexus home</a>
-      </p>
+    <main id="top" style={{ backgroundColor: '#05070f', color: '#cbd5e1', minHeight: '100vh', fontFamily: 'var(--font-body)', padding: '2rem 2rem 6rem', maxWidth: 720, margin: '0 auto', lineHeight: 1.7 }}>
+      <div style={{ position: 'sticky', top: 0, zIndex: 10, padding: '0.75rem 1rem', backgroundColor: 'rgba(5, 7, 15, 0.92)', backdropFilter: 'blur(8px)', borderBottom: '1px solid rgba(0, 235, 212, 0.1)', marginBottom: '2rem', marginLeft: '-2rem', marginRight: '-2rem' }}>
+        <a
+          href="/"
+          style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: '#00ebd4', textDecoration: 'none', outline: 'none' }}
+          className="hover:underline focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f] rounded"
+        >
+          &larr; NiraNexus Home
+        </a>
+      </div>
       <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', color: '#ffffff', marginBottom: '0.5rem' }}>Terms of Service</h1>
       <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginBottom: '2.5rem' }}>Last updated: 15 July 2026</p>
 
@@ -109,6 +115,34 @@ export default function TermsPage() {
         support@niranexus.com
         <p style={{ marginTop: '1rem', color: '#64748b', fontSize: '0.8rem' }}>NiraNexus Ltd — Registered in England and Wales</p>
       </Section>
+
+      <a
+        href="#top"
+        aria-label="Back to top"
+        style={{
+          position: 'fixed',
+          bottom: '2rem',
+          right: '2rem',
+          width: '2.5rem',
+          height: '2.5rem',
+          borderRadius: '50%',
+          backgroundColor: 'rgba(0, 235, 212, 0.12)',
+          border: '1px solid rgba(0, 235, 212, 0.25)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          color: '#00ebd4',
+          textDecoration: 'none',
+          fontSize: '1.2rem',
+          zIndex: 50,
+          transition: 'background-color 0.2s',
+        }}
+        className="hover:underline"
+        onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'rgba(0, 235, 212, 0.2)'; }}
+        onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(0, 235, 212, 0.12)'; }}
+      >
+        ↑
+      </a>
     </main>
   );
 }
