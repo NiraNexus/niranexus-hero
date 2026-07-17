@@ -71,7 +71,7 @@ export default function Home() {
             <>
               <Stat value={status.debates} label="Proven Decisions" sub="Audited via Supabase RLS" />
               <Stat value={`${status.models}x`} label="Active Models" sub="Multi-model deliberation stack" />
-              <Stat value={status.status} label="System Status" sub="Framework v3.0 / 18-gate enforced" />
+              <Stat value={status.status} label="System Status" sub="Framework v3.0 / 19-gate enforced" />
             </>
           ) : statusError ? (
             <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: '#64748b' }}>System telemetry offline</p>
@@ -316,8 +316,8 @@ export default function Home() {
             Governance is not an afterthought. Every layer of NiraNexus-OS enforces its own integrity. Every component — Model Council, Veritas, and beyond — inherits the same hardened infrastructure. Same pipeline, same governance.
           </p>
           <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Badge label="Framework" value="v3.0" detail="18-gate enforcement" />
-            <Badge label="Pre-Code Gate" value="18 Checks" detail="Mechanical enforcement" />
+            <Badge label="Framework" value="v3.0" detail="19-gate enforcement" />
+            <Badge label="Pre-Code Gate" value="19 Checks" detail="Mechanical enforcement" />
             <Badge label="RLS Policies" value="Enforced" detail="Row-Level Security" />
             <Badge label="Authentication" value="OAuth 2.0" detail="Google + JWT" />
             <Badge label="Export" value="PDF/MD/JSON" detail="Signed provenance" />
