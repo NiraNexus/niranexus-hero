@@ -31,7 +31,7 @@ specification page.
 ### 4. The Hardening (page.tsx)
 - Keep badges as-is
 - Add platform-level line: same pipeline, same governance across all products
-- Gate check count: 15 → 17 (current gate has 17 checks)
+- Gate check count: 15 → 17 (current gate has 18 checks)
 
 ### 5. Veritas Spec Page (NEW: veritas/page.tsx)
 - Mirrors model-council/page.tsx structure
