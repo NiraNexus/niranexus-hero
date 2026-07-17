@@ -7,15 +7,16 @@ export const metadata: Metadata = {
 
 export default function TermsPage() {
   return (
-    <main id="top" style={{ backgroundColor: '#05070f', color: '#cbd5e1', minHeight: '100vh', fontFamily: 'var(--font-body)', padding: '2rem 2rem 6rem', maxWidth: 720, margin: '0 auto', lineHeight: 1.7 }}>
+    <>
       <a
         href="/"
         aria-label="NiraNexus home"
-        style={{ display: 'inline-block', fontFamily: 'var(--font-display)', fontSize: '0.8rem', color: '#00ebd4', textDecoration: 'underline', marginBottom: '2rem', outline: 'none' }}
+        style={{ display: 'inline-block', fontFamily: 'var(--font-display)', fontSize: '0.8rem', color: '#00ebd4', textDecoration: 'underline', position: 'absolute', top: '1.5rem', left: '2rem', zIndex: 10, outline: 'none' }}
         className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f] rounded"
       >
         &larr; NiraNexus Home
       </a>
+      <main id="top" style={{ backgroundColor: '#05070f', color: '#cbd5e1', minHeight: '100vh', fontFamily: 'var(--font-body)', padding: '2rem 2rem 6rem', maxWidth: 720, margin: '0 auto', lineHeight: 1.7 }}>
       <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', color: '#ffffff', marginBottom: '0.5rem' }}>Terms of Service</h1>
       <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginBottom: '2.5rem' }}>Last updated: 16 July 2026</p>
 
@@ -141,6 +142,7 @@ export default function TermsPage() {
         ↑
       </a>
     </main>
+    </>
   );
 }
 
