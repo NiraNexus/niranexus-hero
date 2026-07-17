@@ -17,7 +17,7 @@ export default function TermsPage() {
         &larr; NiraNexus Home
       </a>
       <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', color: '#ffffff', marginBottom: '0.5rem' }}>Terms of Service</h1>
-      <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginBottom: '2.5rem' }}>Last updated: 15 July 2026</p>
+      <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginBottom: '2.5rem' }}>Last updated: 16 July 2026</p>
 
       <Section heading="1. Agreement">
         These terms govern your use of the NiraNexus-OS infrastructure operated by NiraNexus Ltd (&ldquo;NiraNexus,&rdquo; &ldquo;we,&rdquo; &ldquo;us&rdquo;), a company registered in England and Wales. By accessing or using NiraNexus-OS — including the Model Council adversarial deliberation engine, the NiraNexus Log, Telegram bot integration, and all associated components — you agree to these terms.
@@ -35,7 +35,7 @@ export default function TermsPage() {
           The platform routes deliberation requests through multiple model providers via OpenRouter. Different underlying models have different capabilities, safety characteristics, and failure modes. NiraNexus does not guarantee consistency of output quality or content filtering across model providers.
         </p>
         <p style={{ marginTop: '0.75rem' }}>
-          You must independently verify and human-review all outputs before relying on them for any commercial, financial, legal, medical, or other consequential purpose. NiraNexus is not liable for decisions made based on AI-generated content.
+          You must independently verify and human-review all outputs before relying on them for any commercial, financial, legal, medical, or other consequential purpose. You acknowledge that AI systems are probabilistic and prone to hallucination; automated outputs must be verified by a human expert before reliance for critical decision-making. NiraNexus is not liable for decisions made based on AI-generated content.
         </p>
       </Section>
 
@@ -88,7 +88,7 @@ export default function TermsPage() {
           To the maximum extent permitted by English law, NiraNexus Ltd&rsquo;s total liability for any claim arising out of these Terms or the use of the infrastructure shall be strictly limited to the lesser of &pound;100 or the total amount paid by you to NiraNexus in the 12 months preceding the claim.
         </p>
         <p style={{ marginTop: '0.75rem' }}>
-          We are not liable for indirect, consequential, or incidental damages including lost profits, business interruption, or data loss. We are not liable for service interruptions, degraded performance, or unavailability caused by upstream infrastructure providers including OpenRouter rate limiting, downstream model provider outages, API key exhaustion, or model deprecation. These events do not entitle users to refunds, compensation, or damages.
+          We are not liable for indirect, consequential, or incidental damages including lost profits, business interruption, or data loss. We are not liable for service interruptions, degraded performance, or unavailability caused by upstream infrastructure providers including OpenRouter rate limiting, downstream model provider outages, API key exhaustion, or model deprecation. NiraNexus is not responsible for the intellectual property compliance, content filtering consistency, or output quality of third-party model providers accessed through OpenRouter. These events do not entitle users to refunds, compensation, or damages.
         </p>
       </Section>
 

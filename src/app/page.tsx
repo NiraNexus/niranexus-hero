@@ -49,7 +49,9 @@ export default function Home() {
           ═══════════════════════════════════════════════════════════ */}
       <section style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '75vh', padding: '3rem 2rem', textAlign: 'center' }} aria-label="Founder introduction and NiraNexus control plane">
 
-        <img src="/logo.svg" alt="" style={{ width: 72, height: 72, marginBottom: '1rem' }} aria-hidden="true" />
+        <a href="/" aria-label="NiraNexus home" style={{ display: 'inline-block', outline: 'none' }} className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f] rounded">
+          <img src="/logo.svg" alt="" style={{ width: 72, height: 72, marginBottom: '1rem' }} aria-hidden="true" />
+        </a>
 
         <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2.5rem, 6vw, 5rem)', color: '#00ebd4', textShadow: '0 0 32px rgba(0, 235, 212, 0.3)', margin: 0 }}>
           NiraNexus

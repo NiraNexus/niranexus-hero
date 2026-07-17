@@ -17,7 +17,7 @@ export default function PrivacyPage() {
         &larr; NiraNexus Home
       </a>
       <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', color: '#ffffff', marginBottom: '0.5rem' }}>Privacy Policy</h1>
-      <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginBottom: '2.5rem' }}>Last updated: 15 July 2026</p>
+      <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginBottom: '2.5rem' }}>Last updated: 16 July 2026</p>
 
       <Section heading="1. Data Controller">
         NiraNexus Ltd acts as the Data Controller for your personal data. We operate the NiraNexus-OS infrastructure — including the Model Council adversarial deliberation engine, Veritas professional deliberation interface, the NiraNexus Log, Telegram integration, and associated components — at niranexus.com and its subdomains.
@@ -56,7 +56,7 @@ export default function PrivacyPage() {
           Your prompts and generated outputs are processed via enterprise developer API pathways, including OpenRouter&rsquo;s zero-retention routes. We do not use your proprietary inputs or outputs to train, tune, or optimize internal models or third-party foundational models without your explicit, opt-in consent.
         </p>
         <p style={{ marginTop: '0.5rem' }}>
-          Each processor has entered into a Data Processing Agreement with NiraNexus Ltd. International data transfers are secured under Standard Contractual Clauses.
+          Each processor has entered into a Data Processing Agreement with NiraNexus Ltd. International data transfers are secured under Standard Contractual Clauses. DPAs are available upon request by contacting privacy@niranexus.com.
         </p>
       </Section>
 
