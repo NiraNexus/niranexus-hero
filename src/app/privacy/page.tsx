@@ -11,7 +11,7 @@ export default function PrivacyPage() {
       <a
         href="/"
         aria-label="NiraNexus home"
-        style={{ display: 'inline-block', fontFamily: 'var(--font-display)', fontSize: '0.8rem', color: '#00ebd4', textDecoration: 'underline', position: 'absolute', top: '1.5rem', left: '2rem', zIndex: 10, outline: 'none' }}
+        style={{ display: 'inline-block', fontFamily: 'var(--font-display)', fontSize: '0.8rem', color: '#00ebd4', textDecoration: 'underline', textShadow: '0 0 10px rgba(0, 235, 212, 0.3)', position: 'absolute', top: '1.5rem', left: '2rem', zIndex: 10, outline: 'none' }}
         className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f] rounded"
       >
         &larr; NiraNexus Home
