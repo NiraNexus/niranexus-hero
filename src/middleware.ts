@@ -3,7 +3,7 @@ import type { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
   const response = NextResponse.next();
-  if (request.nextUrl.hostname.startsWith('test.')) {
+  if (request.nextUrl.hostname.startsWith('test.') || request.nextUrl.hostname.includes('rmnrsb')) {
     response.headers.set('X-Robots-Tag', 'noindex');
   }
   return response;
