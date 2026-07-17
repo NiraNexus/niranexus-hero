@@ -319,6 +319,36 @@ export default function ModelCouncilPage() {
 
       <Divider />
 
+      {/* EXECUTION METRICS */}
+      <section style={{ padding: '3rem 2rem', maxWidth: 700, margin: '0 auto' }}>
+        <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '2rem', textAlign: 'center' }}>Execution Metrics</h2>
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.7, textAlign: 'center', maxWidth: 560, margin: '0 auto' }}>
+          Every deliberation records execution metrics: models deployed, calls executed, fallbacks triggered, verdict production, duration, and token estimates. Clinical labels — STATE_VERDICT, CALLS_EXECUTED — keep the data transparent. Metrics appear in the in-app viewer, public records, and export files.
+        </p>
+      </section>
+
+      <Divider />
+
+      {/* DELIBERATION TEMPLATES */}
+      <section style={{ padding: '3rem 2rem', maxWidth: 700, margin: '0 auto' }}>
+        <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '2rem', textAlign: 'center' }}>Deliberation Templates</h2>
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.7, textAlign: 'center', maxWidth: 560, margin: '0 auto 2rem' }}>
+          Jump-start any deliberation with pre-built templates. Compare, Decide, Review, Validate — four structured prompts that cover the most common deliberation patterns. Click a chip, edit the prompt, convene the Council.
+        </p>
+      </section>
+
+      <Divider />
+
+      {/* API ACCESS */}
+      <section style={{ padding: '3rem 2rem', maxWidth: 700, margin: '0 auto' }}>
+        <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '2rem', textAlign: 'center' }}>API Access</h2>
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.7, textAlign: 'center', maxWidth: 560, margin: '0 auto' }}>
+          Programmatic deliberation via REST API with SSE streaming. POST /api/deliberate with Bearer JWT auth. Same engine, same governance, same quota enforcement. GET /api/deliberate for interactive documentation.
+        </p>
+      </section>
+
+      <Divider />
+
       {/* ═══ CTA ═══ */}
       <section style={{ padding: '3rem 2rem', maxWidth: 500, margin: '0 auto', textAlign: 'center' }}>
         <a

@@ -322,6 +322,7 @@ export default function Home() {
             <Badge label="Authentication" value="OAuth 2.0" detail="Google + JWT" />
             <Badge label="Export" value="PDF/MD/JSON" detail="Signed provenance" />
             <Badge label="Telegram" value="@Bot" detail="Deliberate from chat" />
+            <Badge label="API" value="REST" detail="SSE streaming" />
           </div>
         </footer>
       </RevealSection>
