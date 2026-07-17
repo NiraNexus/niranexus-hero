@@ -14,7 +14,7 @@ Disallow: /
 `;
 
 export function GET(request: NextRequest): Response {
-  const isTest = request.headers.get('host')?.startsWith('test.');
+  const isTest = request.nextUrl.hostname.startsWith('test.');
   const body = isTest ? TEST_RULES : PROD_RULES;
   return new Response(body, {
     headers: { 'Content-Type': 'text/plain' },
