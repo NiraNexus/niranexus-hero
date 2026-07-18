@@ -27,7 +27,7 @@ export default function ModelCouncilPage() {
             <div style={{ position: 'sticky', top: 0, zIndex: 10, padding: '0.75rem 1rem', display: 'flex', alignItems: 'center', backgroundColor: 'rgba(5, 7, 15, 0.92)', backdropFilter: 'blur(8px)', borderBottom: '1px solid rgba(0, 235, 212, 0.1)' }}>
               <Link
                 href="/"
-                style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: '#00ebd4', textDecoration: 'underline', outline: 'none' }}
+                style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: '#00ebd4', textDecoration: 'underline', textShadow: '0 0 10px rgba(0, 235, 212, 0.3)', outline: 'none' }}
                 className="focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:ring-offset-2 focus-visible:ring-offset-[#05070f] rounded"
               >
                 &larr; NiraNexus Home
@@ -176,19 +176,19 @@ export default function ModelCouncilPage() {
           Document-Augmented Deliberation
         </h2>
         <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.7, textAlign: 'center', maxWidth: 560, margin: '0 auto 2rem' }}>
-          Upload a PDF via the deliberation page or send one directly to the Telegram bot. The Council cross-examines your document — models are grounded in the source text, not parametric memory. Claims are verified against the uploaded material, not the model&apos;s training data.
+          Upload a text-based PDF via the deliberation page or send one directly to the Telegram bot. The Council cross-examines your document — models are grounded in the source text, not parametric memory. Claims are verified against the uploaded material, not the model&apos;s training data. Image-heavy or scanned documents contain insufficient extractable text and may not ground the deliberation.
         </p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1rem' }}>
           <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
             <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Web Upload</h3>
             <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
-              Attach a PDF on the deliberation page. Text is extracted and injected into the Council pipeline. Max 10MB.
+              Attach a text-based PDF on the deliberation page. Text is extracted and injected into the Council pipeline. Image-heavy or scanned documents may not provide sufficient extractable text. Max 10MB.
             </p>
           </div>
           <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
             <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.5rem' }}>Telegram Upload</h3>
             <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
-              Send a PDF to @NiraNexus_ModelCouncilBot, then run /deliberate with your question. Same pipeline, same governance.
+              Send a text-based PDF to @NiraNexus_ModelCouncilBot, then run /deliberate with your question. Same pipeline, same governance. Image-heavy or scanned PDFs may not ground the deliberation.
             </p>
           </div>
           <div style={{ padding: '1.25rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.08)' }}>
