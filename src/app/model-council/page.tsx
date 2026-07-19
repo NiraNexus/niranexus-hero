@@ -239,12 +239,14 @@ export default function ModelCouncilPage() {
             @NiraNexus_ModelCouncilBot
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#94a3b8' }}>
-            <div><code style={{ color: '#00ebd4', background: 'none' }}>/deliberate &lt;question&gt;</code> — Run a Council deliberation</div>
-            <div><code style={{ color: '#00ebd4', background: 'none' }}>PDF</code> + <code style={{ color: '#00ebd4', background: 'none' }}>/deliberate &lt;question&gt;</code> — Document-grounded deliberation</div>
-            <div><code style={{ color: '#00ebd4', background: 'none' }}>/status</code> — Check remaining debates</div>
-            <div><code style={{ color: '#00ebd4', background: 'none' }}>/clear</code> — Clear a pending deliberation</div>
-            <div><code style={{ color: '#00ebd4', background: 'none' }}>/link &lt;code&gt;</code> — Link Telegram account to web identity</div>
-            <div><code style={{ color: '#00ebd4', background: 'none' }}>/start</code> — Bot overview and onboarding</div>
+            <div><code style={{ color: '#00ebd4', background: 'none' }}>/deliberate &lt;question&gt;</code> — Submit a question to the Council</div>
+            <div><code style={{ color: '#00ebd4', background: 'none' }}>/deliberate &lt;question&gt; +mcp</code> — Live research with web search (2x debates)</div>
+            <div><code style={{ color: '#00ebd4', background: 'none' }}>/status</code> — View quota and model availability</div>
+            <div><code style={{ color: '#00ebd4', background: 'none' }}>/link &lt;code&gt;</code> — Link this Telegram to your account</div>
+            <div><code style={{ color: '#00ebd4', background: 'none' }}>/clear</code> — Remove attached document context</div>
+            <div><code style={{ color: '#00ebd4', background: 'none' }}>/cancel</code> — Stop a running deliberation</div>
+            <div><code style={{ color: '#00ebd4', background: 'none' }}>/api</code> — View API documentation</div>
+            <div><code style={{ color: '#00ebd4', background: 'none' }}>/start</code> — Welcome, help, and consumption rates</div>
           </div>
         </div>
       </section>
