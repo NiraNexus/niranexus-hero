@@ -351,7 +351,7 @@ export default function ModelCouncilPage() {
       <section style={{ padding: '3rem 2rem', maxWidth: 700, margin: '0 auto' }}>
         <h2 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#64748b', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '2rem', textAlign: 'center' }}>API Access</h2>
         <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.7, textAlign: 'center', maxWidth: 560, margin: '0 auto' }}>
-          Programmatic deliberation via REST API with SSE streaming. POST /api/deliberate with Bearer JWT auth. Same engine, same governance, same quota enforcement. GET /api/deliberate for interactive documentation.
+          Programmatic deliberation via REST API with SSE streaming. POST /api/deliberate with Bearer JWT auth. Same engine, same governance, same quota enforcement. <a href="https://model-council.niranexus.com/api/deliberate" style={{ color: '#00ebd4', textDecoration: 'underline' }} className="hover:opacity-80 focus-visible:ring-2 focus-visible:ring-[#00ebd4] focus-visible:outline-none rounded">GET /api/deliberate</a> for interactive documentation.
         </p>
       </section>
 
