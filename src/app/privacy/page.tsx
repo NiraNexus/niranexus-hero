@@ -66,11 +66,11 @@ export default function PrivacyPage() {
       </Section>
 
       <Section heading="6. Public Deliberation Records">
-        Every deliberation produces a shareable public URL at model-council.niranexus.com/debate/[id]. By submitting a prompt, you acknowledge that the resulting deliberation record — including your prompt, model responses, and synthesis verdict — may be made publicly accessible through this evidence layer. The record does not display your email, name, or personal identifiers.
+        Every deliberation produces a shareable public URL at model-council.niranexus.com/debate/[id]. By submitting a prompt, you acknowledge that the resulting deliberation record — including your prompt, extracted document text (if uploaded), model responses, and synthesis verdict — may be made publicly accessible through this evidence layer. The record does not display your email, name, or personal identifiers.
       </Section>
 
       <Section heading="7. Data Retention and Deletion">
-        Deliberation records are retained to support the public evidence layer and historical audit capability. You may request deletion of your account and associated data by emailing privacy@niranexus.com. Deletion cascades through Supabase to remove your profile, JWT metadata, prompt history, and deliberation records. Responses from AI models that form part of a shared public deliberation record may persist in anonymized form.
+        Deliberation records are retained to support the public evidence layer and historical audit capability. Uploaded document text is retained for the same period as the deliberation record and deleted upon request. You may request deletion of your account and associated data by emailing privacy@niranexus.com. Deletion cascades through Supabase to remove your profile, JWT metadata, prompt history, deliberation records, and uploaded document text. Responses from AI models that form part of a shared public deliberation record may persist in anonymized form.
       </Section>
 
       <Section heading="8. Data Breach Notification">
