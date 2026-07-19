@@ -392,24 +392,18 @@ export default function ModelCouncilPage() {
         >
           Click to Deliberate
         </a>
+        <div style={{ marginTop: '1.5rem', padding: '1rem', backgroundColor: 'rgba(0, 235, 212, 0.05)', borderRadius: 8, border: '1px solid rgba(0, 235, 212, 0.12)' }}>
+          <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', margin: 0, letterSpacing: '0.5px', textTransform: 'uppercase' }}>
+            [SYSTEM_ACCESS_NOTICE]
+          </p>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.78rem', color: '#94a3b8', margin: '0.5rem 0 0', lineHeight: 1.5 }}>
+            Accessing the Council requires authenticated session handling via Google OAuth to maintain SOC 2-ready compliance data integrity and professional audit trails.
+          </p>
+        </div>
       </section>
 
       <ScrollToTop />
 
-      {/* Footer */}
-      <footer style={{ padding: '1.5rem 2rem 3rem', textAlign: 'center' }}>
-        <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b' }}>
-          <a href="https://log.niranexus.com" style={{ color: '#64748b', textDecoration: 'underline' }} className="hover:underline">Log</a>
-          &nbsp;|&nbsp;
-          <a href="/model-council" style={{ color: '#64748b', textDecoration: 'underline' }} className="hover:underline">Specifications</a>
-          &nbsp;|&nbsp;
-          <a href="https://model-council.niranexus.com/faq" style={{ color: '#64748b', textDecoration: 'underline' }} className="hover:underline">FAQ</a>
-          &nbsp;|&nbsp;
-          <a href="/privacy" style={{ color: '#64748b', textDecoration: 'underline' }} className="hover:underline">Privacy</a>
-          &nbsp;|&nbsp;
-          <a href="/terms" style={{ color: '#64748b', textDecoration: 'underline' }} className="hover:underline">Terms</a>
-        </p>
-      </footer>
     </main>
   );
 }
