@@ -29,7 +29,7 @@ const MC_LINKS = (
     {' '}&nbsp;|&nbsp;{' '}
     <a href="https://niranexus.com/model-council" style={linkStyle} className={focusRing}>Specifications</a>
     {' '}&nbsp;|&nbsp;{' '}
-    <Link href="/faq" style={linkStyle} className={focusRing}>FAQ</Link>
+    <a href="https://model-council.niranexus.com/faq" style={linkStyle} className={focusRing}>FAQ</a>
     {' '}&nbsp;|&nbsp;{' '}
     <a href="https://niranexus.com/privacy" style={linkStyle} className={focusRing}>Privacy</a>
     {' '}&nbsp;|&nbsp;{' '}
