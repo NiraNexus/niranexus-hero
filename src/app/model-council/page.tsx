@@ -240,7 +240,7 @@ export default function ModelCouncilPage() {
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#94a3b8' }}>
             <div><code style={{ color: '#00ebd4', background: 'none' }}>/deliberate &lt;question&gt;</code> — Submit a question to the Council</div>
-            <div><code style={{ color: '#00ebd4', background: 'none' }}>/deliberate &lt;question&gt; +mcp</code> — Live research with web search (2x debates)</div>
+            <div><code style={{ color: '#00ebd4', background: 'none' }}>/deliberate &lt;question&gt; +mcp</code> — Live research with web search</div>
             <div><code style={{ color: '#00ebd4', background: 'none' }}>/status</code> — View quota and model availability</div>
             <div><code style={{ color: '#00ebd4', background: 'none' }}>/link &lt;code&gt;</code> — Link this Telegram to your account</div>
             <div><code style={{ color: '#00ebd4', background: 'none' }}>/clear</code> — Remove attached document context</div>
