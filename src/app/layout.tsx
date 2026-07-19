@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Serif_Display, Source_Serif_4, IBM_Plex_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
-import NiraNexusFooter from '@/components/NiraNexusFooter';
+import FooterWrapper from '@/components/FooterWrapper';
 import "./globals.css";
 
 const dmSerifDisplay = DM_Serif_Display({
@@ -70,7 +70,7 @@ export default function RootLayout({
         />
         {children}
         <Analytics />
-        <NiraNexusFooter project="hub" />
+        <FooterWrapper />
       </body>
     </html>
   );
