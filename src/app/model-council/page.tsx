@@ -67,6 +67,30 @@ export default function ModelCouncilPage() {
         <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: '#94a3b8', textAlign: 'center', marginTop: '1.5rem', padding: '0.75rem 1rem', backgroundColor: 'rgba(0, 235, 212, 0.05)', borderRadius: 8, border: '1px solid rgba(0, 235, 212, 0.12)' }}>
           Deliberations may conclude prior to Round 3 if a definitive verdict is reached or if budget thresholds are triggered, ensuring cost-efficiency and protection.
         </p>
+
+        {/* Tool-Augmented Deliberation */}
+        <div style={{ marginTop: '2rem', padding: '1.5rem', backgroundColor: 'rgba(10, 14, 26, 0.3)', borderRadius: 10, border: '1px solid rgba(0, 235, 212, 0.12)' }}>
+          <h3 style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '1rem' }}>
+            Tool-Augmented Deliberation
+          </h3>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: '#cbd5e1', lineHeight: 1.7, margin: 0 }}>
+            When enabled, the deliberative stack executes a deterministic 3-phase cycle:
+          </p>
+          <div style={{ marginTop: '1rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            <div style={{ padding: '0.75rem 1rem', backgroundColor: 'rgba(0, 235, 212, 0.04)', borderRadius: 8 }}>
+              <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px' }}>Phase A (Intent)</span>
+              <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.75rem', color: '#A5B4D0', marginLeft: '0.75rem' }}>Model evaluates evidence necessity; declares requisite tool usage.</span>
+            </div>
+            <div style={{ padding: '0.75rem 1rem', backgroundColor: 'rgba(0, 235, 212, 0.04)', borderRadius: 8 }}>
+              <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px' }}>Phase B (Execute)</span>
+              <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.75rem', color: '#A5B4D0', marginLeft: '0.75rem' }}>Tool calls processed via circuit breakers (loop detection, 6-call/debate budget).</span>
+            </div>
+            <div style={{ padding: '0.75rem 1rem', backgroundColor: 'rgba(0, 235, 212, 0.04)', borderRadius: 8 }}>
+              <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#00ebd4', textTransform: 'uppercase', letterSpacing: '1px' }}>Phase C (Generate)</span>
+              <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.75rem', color: '#A5B4D0', marginLeft: '0.75rem' }}>Tool output synthesized into deliberation; provenance tagged as VERIFIED and persisted to the Evidence Basis.</span>
+            </div>
+          </div>
+        </div>
       </section>
 
       <Divider />
@@ -368,14 +392,6 @@ export default function ModelCouncilPage() {
         >
           Click to Deliberate
         </a>
-        <div style={{ marginTop: '1.5rem', padding: '1rem', backgroundColor: 'rgba(0, 235, 212, 0.05)', borderRadius: 8, border: '1px solid rgba(0, 235, 212, 0.12)' }}>
-          <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', margin: 0, letterSpacing: '0.5px', textTransform: 'uppercase' }}>
-            [SYSTEM_ACCESS_NOTICE]
-          </p>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.78rem', color: '#94a3b8', margin: '0.5rem 0 0', lineHeight: 1.5 }}>
-            Accessing the Council requires authenticated session handling via Google OAuth to maintain SOC 2-ready compliance data integrity and professional audit trails.
-          </p>
-        </div>
       </section>
 
       <ScrollToTop />

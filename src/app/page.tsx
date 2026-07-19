@@ -259,7 +259,7 @@ export default function Home() {
               <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: '#cbd5e1', lineHeight: 1.6, margin: 0 }}>
                 Multi-model deliberation pipeline with auditable source verification. Opening Statements → Cross-Examination → Rebuttal → Synthesis. Document-augmented deliberation — upload PDFs via web or Telegram. Export to PDF, Markdown, or JSON — every file signed with NiraNexus provenance.
               </p>
-              <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '0.75rem', lineHeight: 1.6 }}>Mid-debate checkpoints &middot; Quorum enforcement &middot; Live web search + source verification &middot; Telegram bot integration &middot; REST API with SSE streaming</p>
+              <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#64748b', marginTop: '0.75rem', lineHeight: 1.6 }}>Mid-debate checkpoints &middot; Quorum enforcement &middot; Live Research Pipeline: Multi-phase (Intent/Execute/Generate) tool instrumentation with verified source attribution &middot; Telegram bot integration &middot; REST API with SSE streaming</p>
               <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#00ebd4', marginTop: '1rem', opacity: 0.7 }}>
                               model-council.niranexus.com &rarr;
                             </p>
