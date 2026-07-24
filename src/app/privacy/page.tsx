@@ -125,7 +125,6 @@ export default function PrivacyPage() {
       <Section heading="Contact">
         privacy@niranexus.com<br />
         support@niranexus.com
-        <p style={{ marginTop: '1rem', color: '#64748b', fontSize: '0.8rem' }}>NiraNexus Ltd — Registered in England and Wales</p>
       </Section>
 
       <a
