@@ -21,7 +21,12 @@ export default function PrivacyPage() {
       <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginBottom: '2.5rem' }}>Last updated: 16 July 2026</p>
 
       <Section heading="1. Data Controller">
-        NiraNexus Ltd acts as the Data Controller for your personal data. We operate the NiraNexus-OS infrastructure — including the Model Council adversarial deliberation engine, Veritas professional deliberation interface, the NiraNexus Log, Telegram integration, and associated components — at niranexus.com and its subdomains.
+        <p>
+          NiraNexus Ltd acts as the Data Controller for your personal data. We operate the NiraNexus-OS infrastructure — including the Model Council adversarial deliberation engine, Veritas professional deliberation interface, the NiraNexus Log, Telegram integration, and associated components — at niranexus.com and its subdomains.
+        </p>
+        <p style={{ marginTop: '0.5rem', color: '#94a3b8', fontSize: '0.85rem' }}>
+          NiraNexus Ltd, Suite Ra01, 195–197 Wood Street, London, E17 3NU, United Kingdom. Registered in England and Wales, company number 17358183.
+        </p>
       </Section>
 
       <Section heading="2. Data We Collect">
@@ -79,7 +84,15 @@ export default function PrivacyPage() {
       </Section>
 
       <Section heading="7. Data Retention and Deletion">
-        Deliberation records are retained to support the public evidence layer and historical audit capability. Uploaded document text is retained for the same period as the deliberation record and deleted upon request. You may request deletion of your account and associated data via the deletion endpoint (authenticated users: POST /api/privacy/delete) or by emailing privacy@niranexus.com. Deletion cascades through Supabase to remove your profile, JWT metadata, prompt history, deliberation records, and uploaded document text. Payment records held by Stripe are retained for 6 years as required by HMRC and are not affected by account deletion. Public deliberation records are removed upon deletion.
+        <p>
+          Deliberation records are retained to support the public evidence layer and historical audit capability. Uploaded document text is retained for the same period as the deliberation record and deleted upon request.
+        </p>
+        <p style={{ marginTop: '0.75rem' }}>
+          You may request deletion of your account and associated data via the deletion endpoint (authenticated users: POST /api/privacy/delete) or by emailing privacy@niranexus.com. Deletion cascades through Supabase to remove your profile, JWT metadata, prompt history, deliberation records, and uploaded document text.
+        </p>
+        <p style={{ marginTop: '0.75rem' }}>
+          Payment records held by Stripe are retained for 6 years as required by HMRC and are not affected by account deletion. Public deliberation records are removed upon deletion.
+        </p>
       </Section>
 
       <Section heading="8. Data Breach Notification">
