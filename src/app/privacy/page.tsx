@@ -62,7 +62,16 @@ export default function PrivacyPage() {
       </Section>
 
       <Section heading="5. Cookies">
-        NiraNexus-OS uses minimal cookies. Google OAuth sets session cookies for authentication. Vercel Analytics sets a privacy-focused analytics cookie that does not track individuals across sites. We do not use advertising, tracking, or third-party marketing cookies.
+        <p>
+          NiraNexus-OS uses two categories of cookies:
+        </p>
+        <List items={[
+          '<strong>Essential authentication cookies:</strong> Supabase sets a session cookie when you sign in. This is strictly necessary to provide the deliberation service and does not require consent under UK PECR.',
+          '<strong>Analytics cookie:</strong> Vercel sets a single privacy-focused analytics cookie (<code>_vercel_insights</code>) to measure infrastructure usage. This cookie does not track individuals, does not profile, and does not create cross-site records. It is only loaded after you provide consent via our cookie banner. You may withdraw consent at any time by clearing your browser storage for this site.',
+        ]} />
+        <p style={{ marginTop: '0.75rem' }}>
+          We do not use advertising cookies, tracking cookies, or third-party marketing cookies. No cookie data is shared with advertisers, data brokers, or any party beyond the infrastructure subprocessors listed in Section 4.
+        </p>
       </Section>
 
       <Section heading="6. Public Deliberation Records">
@@ -70,7 +79,7 @@ export default function PrivacyPage() {
       </Section>
 
       <Section heading="7. Data Retention and Deletion">
-        Deliberation records are retained to support the public evidence layer and historical audit capability. Uploaded document text is retained for the same period as the deliberation record and deleted upon request. You may request deletion of your account and associated data by emailing privacy@niranexus.com. Deletion cascades through Supabase to remove your profile, JWT metadata, prompt history, deliberation records, and uploaded document text. Responses from AI models that form part of a shared public deliberation record may persist in anonymized form.
+        Deliberation records are retained to support the public evidence layer and historical audit capability. Uploaded document text is retained for the same period as the deliberation record and deleted upon request. You may request deletion of your account and associated data via the deletion endpoint (authenticated users: POST /api/privacy/delete) or by emailing privacy@niranexus.com. Deletion cascades through Supabase to remove your profile, JWT metadata, prompt history, deliberation records, and uploaded document text. Payment records held by Stripe are retained for 6 years as required by HMRC and are not affected by account deletion. Public deliberation records are removed upon deletion.
       </Section>
 
       <Section heading="8. Data Breach Notification">

@@ -52,7 +52,7 @@ export default function TermsPage() {
           'Exploit technical latency, race conditions, system bugs, or database sync delays to generate content beyond your authenticated balance',
         ]} />
         <p style={{ marginTop: '0.75rem' }}>
-          Every prompt is processed through a unified moderation layer before reaching the model routing stage. Violations will result in account termination and forfeiture of all remaining capacity without refund.
+          Every prompt is processed through a unified moderation layer before reaching the model routing stage. Violations will result in account termination and forfeiture of all remaining capacity.
         </p>
       </Section>
 
@@ -61,22 +61,22 @@ export default function TermsPage() {
           The platform operates on a debate-based capacity model. Free access includes a limited number of deliberations. Additional capacity may be provisioned through Stripe.
         </p>
         <p style={{ marginTop: '0.75rem' }}>
-          Capacity purchased on the platform constitutes a limited, non-transferable, revocable license to access computational infrastructure. Capacity has no cash or monetary value, cannot be redeemed for fiat currency, and strictly expires 12 months from the date of provisioning. Unused expired capacity is non-refundable.
+          Capacity purchased on the platform constitutes a limited, non-transferable, revocable license to access computational infrastructure. Capacity has no cash or monetary value, cannot be redeemed for fiat currency, and strictly expires 12 months from the date of provisioning. Unused expired capacity is forfeited.
         </p>
         <p style={{ marginTop: '0.75rem' }}>
           Capacity consumption varies based on model selection, prompt complexity, document attachments, and real-time infrastructure conditions. NiraNexus reserves the right to adjust consumption rates to reflect changing model provider costs without prior notice.
         </p>
         <p style={{ marginTop: '0.75rem' }}>
-          Capacity deductions are enforced through atomic Postgres database functions with Row Level Security. Free capacity is consumed before purchased capacity. Exploiting latency or race conditions to deliberate beyond your authenticated balance constitutes a material breach resulting in immediate termination and forfeiture of all remaining capacity without refund.
+          Capacity deductions are enforced through atomic Postgres database functions with Row Level Security. Free capacity is consumed before purchased capacity. Exploiting latency or race conditions to deliberate beyond your authenticated balance constitutes a material breach resulting in immediate termination and forfeiture of all remaining capacity.
         </p>
       </Section>
 
-      <Section heading="6. Cancellation and Refunds">
+      <Section heading="6. Capacity and Reversal">
         <p>
-          Under the UK Consumer Contracts Regulations, you have a statutory 14-day right to cancel purchases of digital content. By provisioning capacity and initiating a deliberation, you expressly request immediate performance of this contract and acknowledge that you lose your statutory 14-day right to cancel once any deliberation has been executed.
+          Under the UK Consumer Contracts Regulations, you have a statutory 14-day right to cancel digital content provisioning. By initiating a deliberation, you expressly request immediate performance and acknowledge that the right to cancel is extinguished once a deliberation has been executed. Debates consumed are non-reversible.
         </p>
         <p style={{ marginTop: '0.75rem' }}>
-          Refund requests for unconsumed capacity should be directed to payments@niranexus.com. Chargebacks filed after capacity has been consumed will be contested with authenticated usage logs showing deliberation activity, timestamps, and JWT-verified identity.
+          Requests concerning unprovisioned capacity may be directed to payments@niranexus.com. Chargebacks filed after capacity has been consumed will be contested with authenticated usage logs showing deliberation activity, timestamps, and JWT-verified identity.
         </p>
       </Section>
 
